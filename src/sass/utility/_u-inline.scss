@@ -1,0 +1,33 @@
+@use "global" as *;
+
+/* --- タブレット小サイズでインラインブロックになり改行させない --- */
+.u-inline-sm-tab {
+  display: block;
+  @include mq("sm") {
+    display: inline;
+  }
+}
+
+/* --- タブレットサイズでインラインブロックになり改行させない --- */
+.u-inline-tab {
+  display: block;
+  @include mq("md") {
+    display: inline;
+  }
+}
+
+/* --- タブレットサイズ大でインラインブロックになり改行させない --- */
+.u-inline-tab-large {
+  display: block;
+  @include mq("lg") {
+    display: inline;
+  }
+}
+
+/* --- pcサイズでインラインブロックになり改行させない --- */
+.u-inline-pc {
+  display: block;
+  @include mq("xl") {
+    display: inline;
+  }
+}

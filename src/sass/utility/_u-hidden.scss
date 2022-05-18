@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.u-hidden-mobile {
+	// タブレット小サイズ時に非表示
+
+	@include mq("sm") {
+		display: none;
+	}
+}
+
+.u-hidden-tab {
+	// タブレット時に非表示
+
+	@include mq("md") {
+		display: none;
+	}
+}
+
+
+.u-hidden-desktop {
+	// Pc時に非表示
+
+	@include mq("lg") {
+		display: none;
+	}
+}
+
+

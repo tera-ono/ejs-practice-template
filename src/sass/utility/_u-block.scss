@@ -1,0 +1,9 @@
+@use "global" as *;
+
+/* --- タブレットサイズでブロックになり改行する --- */
+.u-block-tab {
+  display: inline;
+  @include mq("md") {
+    display: block;
+  }
+}

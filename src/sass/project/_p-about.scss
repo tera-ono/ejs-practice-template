@@ -1,0 +1,118 @@
+@use "global" as *;
+
+.p-about {
+  @include mq("md") {
+    background-image: url(../images/common/bg-about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+  }
+}
+
+.p-about__img {
+  position: relative;
+  width: 100%;
+}
+.p-about__img::before {
+  content: "";
+  display: block;
+  padding-top: 74.029%;
+  /* --- タブレット以降は非表示 --- */
+  @include mq("md") {
+    display: none;
+  }
+}
+.p-about__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-position: center;
+  object-fit: cover;
+}
+
+.p-about__body {
+  margin-top: rem(36);
+  background-color: $white;
+  @include mq("md") {
+    max-width: rem(505);
+    width: 100%;
+    margin-top: 0;
+    padding: rem(40) rem(50) rem(46);
+  }
+}
+
+/* --- aos.jsでspとtablet~のアニメーションを変える --- */
+.p-about__body[data-aos="new-animation"] {
+  opacity: 0;
+  transform: translate(0, 100px);
+  @include mq("md") {
+    transform: translate(30vw, 0);
+  }
+}
+.p-about__body[data-aos="new-animation"].aos-animate {
+  opacity: 1;
+  transform: translate(0);
+  transition: 0.7s;
+  @include mq("md") {
+    transition: 1.5s ease-out;
+  }
+}
+
+.p-about__description {
+  margin-top: rem(17);
+  @include mq("md") {
+    margin-top: rem(24);
+    overflow-wrap: break-word;
+    word-break: keep-all;
+  }
+}
+
+.p-about__btn {
+  margin-top: rem(29);
+  margin-left: auto;
+  margin-right: auto;
+  font-feature-settings: "palt";
+
+  @include mq("md") {
+    margin-top: rem(37);
+    margin-left: 0;
+    margin-right: 0;
+    font-feature-settings: initial;
+  }
+}
+/* --- コンポーネント上書き --- */
+.p-about__btn a .c-btn__icon {
+  margin-left: rem(23);
+}
+
+
+.p-about__pc-img {
+  /* --- sp時非表示 --- */
+  display: none;
+  @include mq("md") {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: rem(32);
+  }
+}
+.p-about__pc-img::before {
+  content: "";
+  display: block;
+  padding-top: 29.4117%;
+}
+.p-about__pc-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-position: center;
+  object-fit: cover;
+}

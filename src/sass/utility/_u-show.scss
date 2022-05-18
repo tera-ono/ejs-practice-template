@@ -1,0 +1,8 @@
+@use "global" as *;
+/* --- スマホ時は非表示でタブレット以上だと表示される --- */
+.u-show-tab {
+	display: none;
+	@include mq("md") {
+		display: block;
+	}
+}

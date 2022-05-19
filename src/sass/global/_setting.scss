@@ -16,9 +16,11 @@ $padding-sp: 20px;
 ////////////////////
 // フォント設定
 ////////////////////
-
-$base-font-family: "lato","Noto Sans JP", sans-serif;
-$second-font-family: "Noto Sans JP", sans-serif;
+$jp-font: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+$en-font: 'Lora', serif;
+$second-en-font: 'Allura', cursive;
+// $base-font-family: "lato","Noto Sans JP", sans-serif;
+// $second-font-family: "Noto Sans JP", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {

@@ -40,10 +40,14 @@ $ex-bold: 900;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$main: #8B6C3A;
+
+$gold: #8B6C3A;
 $black: #393327;
 $white: #FFFFFF;
 $gray: #FAFAFA;
+$primary: $gold;
+$main-bgcolor: $white;
+$sub-bgcolor: $gray;
 
 ////////////////////
 // opacity

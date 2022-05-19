@@ -32,8 +32,10 @@ a {
   text-decoration: none;
   color: inherit;
   transition: opacity $transition-duration linear;
-  &:hover, &:focus {
-    opacity: $opacity;
-    transition: opacity $transition-duration linear;
+  @media (any-hover: hover) {
+    &:hover, &:focus {
+      opacity: $opacity;
+      transition: opacity $transition-duration linear;
+    }
   }
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "lato", "Noto Sans JP", sans-serif;
+  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
   /* --- ドロワーメニュー表示時背景スクロール禁止 --- */
 }
 body.is-open {
@@ -87,7 +87,7 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

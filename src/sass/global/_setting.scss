@@ -24,7 +24,7 @@ $second-en-font: 'Allura', cursive;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+  font-family: $jp-font;
   /* --- ドロワーメニュー表示時背景スクロール禁止 --- */
   &.is-open {
     overflow: hidden;

@@ -1,0 +1,9 @@
+@use "global" as *;
+.l-header {
+  // position: fixed;
+  height: rem(68);
+  padding: 0 rem(20);
+  @include mq("md") {
+    height: rem(120);
+  }
+}

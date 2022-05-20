@@ -1,0 +1,16 @@
+@use "global" as *;
+.c-line-link {
+  display: inline-block;
+  font-size: rem(14);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  padding: rem(12) rem(28);
+  color: $white;
+  background: linear-gradient(258.82deg, #8B6C3A 21.4%, #B19464 58.78%, #8B6C3A 96.8%);
+  border-radius: 2px;
+  @include mq("md") {
+    font-size: rem(16);
+    padding: rem(17) rem(40);
+  }
+}

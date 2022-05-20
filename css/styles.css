@@ -164,6 +164,18 @@ select::-ms-expand {
   display: none;
 }
 
+.l-header {
+  height: 68px;
+  height: 4.25rem;
+  padding: 0 20px;
+  padding: 0 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .l-header {
+    height: 7.5rem;
+  }
+}
+
 .l-inner {
   max-width: 540px;
   max-width: 33.75rem;
@@ -182,21 +194,49 @@ select::-ms-expand {
   }
 }
 
-.c-tag {
+.c-line-link {
   display: inline-block;
-  font-size: 12px;
-  font-size: 0.75rem;
-  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
   line-height: 1;
-  padding: 5px 8px;
-  padding: 0.3125rem 0.5rem;
-  border-radius: 0.625rem;
+  letter-spacing: 0.2em;
+  padding: 12px 28px;
+  padding: 0.75rem 1.75rem;
+  color: #FFFFFF;
+  background: linear-gradient(258.82deg, #8B6C3A 21.4%, #B19464 58.78%, #8B6C3A 96.8%);
+  border-radius: 2px;
 }
 @media screen and (min-width: 768px) {
-  .c-tag {
-    padding: 0.4375rem 1rem;
-    border-radius: 0.3125rem;
+  .c-line-link {
+    font-size: 1rem;
+    padding: 1.0625rem 2.5rem;
   }
+}
+
+.c-logo {
+  display: inline-block;
+  width: 76px;
+  width: 4.75rem;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .c-logo {
+    width: 8.125rem;
+  }
+}
+
+.c-mobile-btn {
+  display: grid;
+  place-items: center;
+}
+
+.c-mobile-btn__bar {
+  width: 28px;
+  width: 1.75rem;
+  height: 1px;
+  height: 0.0625rem;
+  background-color: #8B6C3A;
 }
 
 @media screen and (min-width: 768px) {
@@ -349,6 +389,69 @@ select::-ms-expand {
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-header-nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.p-header-nav__item {
+  display: none;
+  height: inherit;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #393327;
+  padding: 0 10px;
+  padding: 0 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-header-nav__item {
+    display: grid;
+    place-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-header-nav__item {
+    padding: 0 1rem;
+  }
+}
+
+.p-header-nav__item a {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__logo {
+    padding: 0 0.4375rem;
+  }
+}
+
+.p-header-nav__line {
+  display: grid;
+  place-items: center;
+}
+@media screen and (min-width: 768px) {
+  .p-header-nav__line {
+    padding-left: 2.5625rem;
+  }
+}
+
+.p-header__nav {
+  height: inherit;
 }
 
 /* --- タブレットサイズでブロックになり改行する --- */

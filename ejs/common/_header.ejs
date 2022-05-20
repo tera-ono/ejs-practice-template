@@ -56,7 +56,7 @@
           </li>
           <% } %> 
 
-          <li class="p-header__logo">
+          <li class="p-header__logo c-logo">
             <% if (pageId === 'home'){ %>
               <img src="<%- imgPath.common  %>logo.svg " alt="ロゴ">
             <% } else { %>
@@ -76,14 +76,16 @@
           <li class="p-header-nav__item p-header-nav__line">
             <a href="#" class="c-line-link">LINE予約</a>
           </li>
+          <li class="p-header-nav__mobile">
+            <button class="c-mobile-btn">
+              <span class="c-mobile-btn__bar"></span>
+              <span class="c-mobile-btn__bar"></span>
+              <span class="c-mobile-btn__bar"></span>
+            </button>
+          </li>
         </ul>
       </nav> 
 
-      <button class="p-header__mobile c-mobile-btn">
-        <span class="c-mobile-btn__bar"></span>
-        <span class="c-mobile-btn__bar"></span>
-        <span class="c-mobile-btn__bar"></span>
-      </button>
     </header>
 
     <nav class="c-drawer-menu">

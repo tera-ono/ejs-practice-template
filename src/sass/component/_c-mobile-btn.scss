@@ -1,11 +1,23 @@
 @use "global" as *;
 .c-mobile-btn {
   display: grid;
-  place-items: center;
+  place-items: center start;
 }
 
 .c-mobile-btn__bar {
-  width: rem(28);
   height: rem(1);
-  background-color: $primary;
+  background-color: $black;
+}
+
+.c-mobile-btn__bar:first-of-type {
+  width: rem(28);
+}
+
+.c-mobile-btn__bar:nth-of-type(2) {
+  width: rem(22);
+  margin: rem(8.5) 0;
+}
+
+.c-mobile-btn__bar:last-of-type {
+  width: rem(15);
 }

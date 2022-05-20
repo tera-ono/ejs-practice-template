@@ -4,9 +4,11 @@
 
 .p-header-nav__items {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: inherit;
+  @include mq("md") {
+    justify-content: center;
+  }
 }
 
 .p-header-nav__item {
@@ -42,7 +44,19 @@
 .p-header-nav__line {
   display: grid;
   place-items: center;
+  margin-left: auto;
   @include mq("md") {
+    margin-left: initial  ;
     padding-left: rem(41);
+  }
+}
+
+.p-header-nav__mobile {
+  height: inherit;
+  display: grid;
+  place-items: center;
+  
+  @include mq("md") {
+    display: none;
   }
 }

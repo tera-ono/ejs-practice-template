@@ -1,3 +1,9 @@
+<% const imgPath = {
+  common:'./images/common/',
+  pc: './images/pc/',
+  sp: './images/sp/',
+}; %> 
+
 <!DOCTYPE html>
 <html lang="ja">
   <head
@@ -44,26 +50,41 @@
       <nav class="p-header__nav p-header-nav">
         <ul class="p-header-nav__items">
           <% navMenu1 = ['OWNER’S PROFILE','FEATURE', 'MEMBER’S VOICE']; %>
-
           <% for(let i of navMenu1) {%> 
           <li class="p-header-nav__item">
-            <a href="#"><%=  i;  %></a>
+            <a href="#"><%-  i;  %></a>
           </li>
           <% } %> 
-        </ul>
-      </nav> 
-      <div class="p-header__logo">
-        
-      </div>
-      <nav class="p-header__nav p-header-nav">
-        <ul class="p-header-nav__items">
-          <% navMenu2 = ['PRICE','Q&A', 'ACCESS']; %>
 
+          <div class="p-header__logo">
+            <img src="<%= imgPath.common %>logo.svg" alt="MELIA FITNESSロゴ">
+          </div>
+
+          <% navMenu2 = ['PRICE','Q&A', 'ACCESS']; %>
           <% for(let i of navMenu2) {%> 
           <li class="p-header-nav__item">
-            <a href="#"><%=  i;  %></a>
+            <a href="#"><%-  i;  %></a>
           </li>
           <% } %> 
+
+          <li class="p-header-nav__item p-header-nav__line">
+            <a href="#" class="c-line-link">LINE予約</a>
+          </li>
         </ul>
-      </nav>
+      </nav> 
+
+      <button class="p-header__mobile c-mobile-btn">
+        <span class="c-mobile-btn__bar"></span>
+        <span class="c-mobile-btn__bar"></span>
+        <span class="c-mobile-btn__bar"></span>
+      </button>
     </header>
+
+    <nav class="c-drawer-menu">
+      <ul class="c-drawer-menu__items">
+      <% drawerMenu = navMenu1.concat(navMenu2); %> 
+      <% for(let i of drawerMenu) { %>
+        <li class="c-drawer-menu__item"><%- i %></li>
+      <% } %>   
+      </ul>
+    </nav>

@@ -56,9 +56,15 @@
           </li>
           <% } %> 
 
-          <div class="p-header__logo">
-            <img src="<%= imgPath.common %>logo.svg" alt="MELIA FITNESSロゴ">
-          </div>
+          <li class="p-header__logo">
+            <% if (pageId === 'home'){ %>
+              <img src="<%- imgPath.common  %>logo.svg " alt="ロゴ">
+            <% } else { %>
+              <a href="/">
+                <img src="<%- imgPath.common  %>logo.svg " alt="ロゴ">
+              </a>
+            <% } %>
+          </li>
 
           <% navMenu2 = ['PRICE','Q&A', 'ACCESS']; %>
           <% for(let i of navMenu2) {%> 
@@ -82,6 +88,7 @@
 
     <nav class="c-drawer-menu">
       <ul class="c-drawer-menu__items">
+      <%# 配列を結合してドロワーメニュー %> 
       <% drawerMenu = navMenu1.concat(navMenu2); %> 
       <% for(let i of drawerMenu) { %>
         <li class="c-drawer-menu__item"><%- i %></li>

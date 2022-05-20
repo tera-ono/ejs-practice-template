@@ -7,6 +7,7 @@
 .c-mobile-btn__bar {
   height: rem(1);
   background-color: $black;
+  transition: $transition-duration ease;
 }
 
 .c-mobile-btn__bar:first-of-type {
@@ -20,4 +21,24 @@
 
 .c-mobile-btn__bar:last-of-type {
   width: rem(15);
+}
+
+.is-open {
+  &.c-mobile-btn__bar:first-of-type {
+    transform: rotate(-45deg) translateY(1px);
+    transition: rotate $transition-duration ease;
+  }
+  
+  &.c-mobile-btn__bar:nth-of-type(2) {
+    margin: 0;
+    transform: translate(50%);
+    opacity: 0;
+    transition: $transition-duration ease;
+  }
+  
+  &.c-mobile-btn__bar:last-of-type {
+    width: rem(28);
+    transform: rotate(45deg) translateY(-1px);
+    transition: $transition-duration ease;
+  }
 }

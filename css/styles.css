@@ -235,6 +235,8 @@ select::-ms-expand {
   height: 1px;
   height: 0.0625rem;
   background-color: #393327;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .c-mobile-btn__bar:first-of-type {
@@ -252,6 +254,29 @@ select::-ms-expand {
 .c-mobile-btn__bar:last-of-type {
   width: 15px;
   width: 0.9375rem;
+}
+
+.is-open.c-mobile-btn__bar:first-of-type {
+  -webkit-transform: rotate(-45deg) translateY(1px);
+          transform: rotate(-45deg) translateY(1px);
+  -webkit-transition: rotate 0.3s ease;
+  transition: rotate 0.3s ease;
+}
+.is-open.c-mobile-btn__bar:nth-of-type(2) {
+  margin: 0;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.is-open.c-mobile-btn__bar:last-of-type {
+  width: 28px;
+  width: 1.75rem;
+  -webkit-transform: rotate(45deg) translateY(-1px);
+          transform: rotate(45deg) translateY(-1px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {

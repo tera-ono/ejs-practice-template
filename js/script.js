@@ -1,15 +1,9 @@
-/* --- aos.js スクロールアニメーション --- */
-AOS.init({
-  /* --- 一度のみの発火 --- */
-  offset: 100,
-  once: true,
-});
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
   /* --- ドロワーメニュー --- */
   $('.js-mobile-menu').on('click', function() {
-    $(this).toggleClass('is-open');
+    $('.c-mobile-btn__bar').toggleClass('is-open');
     $('.js-drawer').toggleClass('is-open');
     $('.js-header').toggleClass('is-open');
     /* --- 背景スクロール禁止&解除 --- */

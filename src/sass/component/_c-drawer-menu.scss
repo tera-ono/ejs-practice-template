@@ -37,6 +37,9 @@
   padding-top: rem(40);
   transform: translateX(100%);
   transition: transform $transition-duration ease-out;
+  // スクロール出来るように。下が詰まったら、padding-bottomで余白
+  overflow: scroll;
+  padding-bottom: rem(50);
 }
 
 .c-drawer-menu.is-open > .c-drawer-menu__items {
@@ -55,6 +58,6 @@
   padding: rem(16) 0;
 }
 
-h1 {
-  margin-top: 200px;
+.c-drawer-menu__icons {
+  margin-top: rem(41);
 }

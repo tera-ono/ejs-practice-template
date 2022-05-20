@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fab {
+    display: grid;
+    place-items: center;
+    width: rem(40);
+    height: rem(40);
+    font-size: 20px;
+    color: $white;
+    background-color: $black;
+    border-radius: 50%;
+    // padding: 0 rem(12.4);
+  }
+}
+
+.c-icons__link {
+  display: block;
+  padding: 0 rem(12.4);
+}

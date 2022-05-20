@@ -241,6 +241,9 @@ select::-ms-expand {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  overflow: scroll;
+  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .c-drawer-menu.is-open > .c-drawer-menu__items {
@@ -267,8 +270,39 @@ select::-ms-expand {
   padding: 1rem 0;
 }
 
-h1 {
-  margin-top: 200px;
+.c-drawer-menu__icons {
+  margin-top: 41px;
+  margin-top: 2.5625rem;
+}
+
+.c-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.c-icons .fab {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #393327;
+  border-radius: 50%;
+}
+
+.c-icons__link {
+  display: block;
+  padding: 0 12.4px;
+  padding: 0 0.775rem;
 }
 
 .c-line-link {

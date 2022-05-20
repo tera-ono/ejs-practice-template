@@ -1,6 +1,8 @@
 @use "global" as *;
 .p-header {
-  
+  position: fixed;
+  width: 100%;
+  z-index: $header_z-index;
 }
 
 .p-header__nav {

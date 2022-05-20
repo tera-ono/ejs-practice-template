@@ -12,7 +12,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   $('.js-drawer-link').on('click', function() {
     $('.js-drawer').removeClass('is-open');
-    $('.js-mobile-menu').removeClass('is-open');
+    $('.c-mobile-btn__bar').removeClass('is-open');
     $('.js-header').removeClass('is-open');
     /* --- 背景スクロール禁止&解除 --- */
     $('body').removeClass('is-open');

@@ -88,12 +88,14 @@
 
     </header>
 
-    <nav class="c-drawer-menu">
+    <nav class="c-drawer-menu js-drawer">
       <ul class="c-drawer-menu__items">
       <%# 配列を結合してドロワーメニュー %> 
-      <% drawerMenu = navMenu1.concat(navMenu2); %> 
+      <% drawerMenu =['TOP'].concat(navMenu1).concat(navMenu2); %> 
       <% for(let i of drawerMenu) { %>
-        <li class="c-drawer-menu__item"><%- i %></li>
+        <li class="c-drawer-menu__item js-drawer-link">
+          <a href="#"><%- i %></a>
+        </li>
       <% } %>   
       </ul>
     </nav>

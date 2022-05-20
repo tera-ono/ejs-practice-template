@@ -267,6 +267,10 @@ select::-ms-expand {
   padding: 1rem 0;
 }
 
+h1 {
+  margin-top: 200px;
+}
+
 .c-line-link {
   display: inline-block;
   font-size: 14px;
@@ -583,6 +587,8 @@ select::-ms-expand {
 
 .p-header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 200;
 }

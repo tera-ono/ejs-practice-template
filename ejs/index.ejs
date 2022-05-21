@@ -1,7 +1,7 @@
 <% let pageId = 'home'; %>
 <%- include('./common/_header.ejs', { pageId: pageId }); %>
 <main>
-  <%- include('./common/_mv.ejs'); %> 
+<%- include('./common/_mv.ejs', { pageId: pageId }); %> 
 
   <section class="l-voice p-voice">
     <div class="l-inner">

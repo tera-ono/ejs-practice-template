@@ -11,7 +11,16 @@
 } %> 
 <section class="l-mv p-mv">
   <div class="p-mv__inner l-inner">
+    <% if(pageId === 'home') { %> 
     <h2 class="p-mv__title"><%- mv.home.title; %></h2>
-    <p class="p-mv__sub"><%- mv.home.sub; %> </p>
+    <% } else { %> 
+    <h2 class="p-mv__title"><%- mv.next.title; %></h2>
+     <% }; %>  
+    <% if(pageId === 'home') { %> 
+    <p class="p-mv__sub"><%- mv.next.sub; %> </p>
+    <% } else { %> 
+    <p class="p-mv__sub"><%- mv.next.sub; %> </p>
+     <% }; %>  
+    
   </div>
 </section>

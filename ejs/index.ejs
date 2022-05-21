@@ -11,11 +11,13 @@
             img:'./images/common/voice1.jpg',
             heading: '理想的なカラダになれました！',
             description: 'マンツーマンの指導を受けることができ、自分のなりたい身体に合ったトレーニングができてとても良かったです。<br>2か月で理想の体型になることができました！',
+            name: '38歳 会社員 女性',
           },
           {
             img:'./images/common/voice2.jpg',
             heading: 'リバウンドせずに体型維持できています！',
             description: '4か月前に目標の体重になってからなってからリバウンドもなく、今でもボディメイクを楽しんで続けられています。',
+            name: '42歳 会社経営 女性',
           },
         ]; %> 
         <% for(let i in card1) { %>
@@ -26,6 +28,7 @@
           <div class="c-card1__body">
             <h3 class="c-card1__heading"><%= card1[i].heading; %></h3>
             <p class="c-card1__description"><%- card1[i].description; %></p>
+            <p class="c-card1__name"><%= card1[i].name; %></p>
           </div>
         </article>
         <% }; %>

@@ -1,7 +1,7 @@
 <% mv = {
   home:{
-    title: '週一のトレーニングで',
-    sub: 'サブ',
+    title: '週一のトレーニングで<br>人に見せたくなる<br class="u-hidden-tab">カラダをつくる',
+    sub: '一流俳優・モデルを指導してきた<br class="u-hidden-tab">本物のパーソナルトレーニング',
   },
   next:{
     title: 'ネクスト',
@@ -11,10 +11,7 @@
 } %> 
 <section class="l-mv p-mv">
   <div class="p-mv__inner l-inner">
-    <!-- <h2><%- mv.home.title; %></h2> -->
-    <h2 class="p-mv__title">週一のトレーニングで<br>
-      人に見せたくなる<br class="u-hidden-tab">
-      カラダをつくる</h2>
-      <p class="p-mv__sub">一流俳優・モデルを指導してきた<br class="u-hidden-tab"> 本物のパーソナルトレーニング</p>
+    <h2 class="p-mv__title"><%- mv.home.title; %></h2>
+    <p class="p-mv__sub"><%- mv.home.sub; %> </p>
   </div>
 </section>

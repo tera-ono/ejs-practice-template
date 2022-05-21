@@ -1,4 +1,24 @@
 @use "global" as *;
 .p-voice {
-  
+
+}
+
+.p-voice__heading {
+  font-size: rem(20);
+  font-weight: 600;
+  line-height: calc(30 / 20);
+  letter-spacing: 0.05em;
+  color: $primary;
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(32);
+    letter-spacing: 0.1em;
+  }
+}
+
+.p-voice__cards {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
 }

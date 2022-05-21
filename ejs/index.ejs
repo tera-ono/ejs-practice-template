@@ -1,14 +1,7 @@
 <% let pageId = 'home'; %>
 <%- include('./common/_header.ejs', { pageId: pageId }); %>
 <main>
-  <section class="l-mv p-mv">
-    <div class="p-mv__inner l-inner">
-      <h2 class="p-mv__title">週一のトレーニングで<br>
-        人に見せたくなる<br class="u-hidden-tab">
-        カラダをつくる。</h2>
-        <p class="p-mv__sub">一流俳優・モデルを指導してきた<br class="u-hidden-tab"> 本物のパーソナルトレーニング</p>
-    </div>
-  </section>
+  <%- include('./common/_mv.ejs'); %> 
 </main> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/script.js"></script>

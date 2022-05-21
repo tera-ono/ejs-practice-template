@@ -1,0 +1,49 @@
+@use "global" as *;
+.p-mv {
+  background-image: url(../images/sp/mv-bg_sp.jpg);
+  background-position: left 30%;
+  background-size: cover;
+  height: calc(100vh - rem(68));
+  padding-top: rem(40);
+  text-align: center;
+  @include mq("md") {
+    background-image: url(../images/pc/mv-bg_pc.jpg);
+    background-position: center right 30%;
+    height: rem(681);
+    padding-top: 0;
+    text-align: start;
+  }
+}
+
+.p-mv__inner {
+  @include mq("md") {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.p-mv__title {
+  font-size: rem(22);
+  font-weight: 600;
+  line-height: calc(36 / 22);
+  letter-spacing: 0.1em;
+  color: $black;
+  @include mq("md") {
+    font-size: rem(32);
+    line-height: calc(60 / 32);
+  }
+}
+
+.p-mv__sub {
+  font-size: rem(14);
+  font-weight: 600;
+  line-height: calc(21 / 14);
+  margin-top: rem(12);
+  @include mq("md") {
+    font-size: rem(22);
+    font-weight: 400;
+    line-height: calc(33 / 22);
+    margin-top: rem(32);
+  }
+}

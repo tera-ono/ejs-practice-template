@@ -1,43 +1,43 @@
 @use "global" as *;
-.c-card1 {
+.c-card3 {
   @include mq("md") {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-.c-card1:nth-of-type(odd) {
+.c-card3:nth-of-type(odd) {
   @include mq("md") {
-    flex-direction: row-reverse;
-    .c-card1__img {
-      margin-left: 9.433%;
+    .c-card3__img {
+      margin-right: 6.51%;
     }
   }
 }
-.c-card1:nth-of-type(even) {
+.c-card3:nth-of-type(even) {
   @include mq("md") {
-    .c-card1__img {
-      margin-right: 9.433%;
+    flex-direction: row-reverse;
+    .c-card3__img {
+      margin-left: 6.51%;
     }
   }
 }
 
-.c-card1:not(:first-of-type) {
+.c-card3:not(:first-of-type) {
   margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(100);
   }
 }
-.c-card1__img {
+.c-card3__img {
   position: relative;
   width: 100%;
 }
-.c-card1__img::before {
+.c-card3__img::before {
   content: '';
   display: block;
   padding-top: 66.666%;
 }
-.c-card1__img img {
+.c-card3__img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,34 +48,24 @@
   object-fit: cover;
 }
 
-.c-card1__body {
+.c-card3__body {
   @include mq("md") {
     flex: 0 0 49.056%;
   }
 }
-.c-card1__heading {
+.c-card3__heading {
   font-size: rem(18);
   font-weight: 600;
   line-height: calc(27 / 18);
   letter-spacing: 0.05em;
-  color: $black;
+  color: $primary;
   @include mq("md") {
     font-size: rem(24);
     letter-spacing: 0.1em;
   }
 }
-.c-card1__description {
-  font-size: rem(16);
-  font-weight: 400;
-  line-height: calc(28.8 / 16);
-  letter-spacing: 0.02em;
-  color: $black;
-  margin-top: rem(12);
-  @include mq("md") {
-    margin-top: rem(20);
-  }
-}
-.c-card1__name {
+
+.c-card3__name {
   font-size: rem(14);
   font-weight: 400;
   line-height: calc(21 / 14);
@@ -84,7 +74,18 @@
   margin-top: rem(12);
   @include mq("md") {
     font-size: rem(16);
-    margin-top: rem(17);
-    text-align: end;
+    margin-top: rem(20);
+  }
+}
+.c-card3__description {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(28.8 / 16);
+  letter-spacing: 0.02em;
+  color: $black;
+  margin-top: rem(12);
+  @include mq("md") {
+    line-height: 2;
+    margin-top: rem(24);
   }
 }

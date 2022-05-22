@@ -1,0 +1,24 @@
+<%# 
+  テンプレ
+  const 変数名 = [
+          {
+            img:'./images/common/voice1.jpg',
+            alt: 'alt',
+            heading: 'タイトル',
+            name: '名前',
+            description: '説明文',
+          },
+        ]; 
+ %> 
+ <% for(let i in card3) { %>
+  <article class="p-cards3__item c-card3">
+    <div class="c-card3__img">
+      <img src="<%- card3[i].img; %>" alt="<%= card3[i].alt; %>">
+    </div>
+    <div class="c-card3__body">
+      <h3 class="c-card3__heading"><%- card3[i].heading; %></h3>
+      <p class="c-card3__name"><%- card3[i].name; %></p>
+      <p class="c-card3__description"><%- card3[i].description; %></p>
+    </div>
+  </article>
+  <% }; %>

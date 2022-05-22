@@ -533,6 +533,53 @@ select::-ms-expand {
   transition: 0.3s ease;
 }
 
+.c-section-title-line {
+  position: relative;
+  display: inline-block;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #393327;
+}
+@media screen and (min-width: 768px) {
+  .c-section-title-line {
+    font-size: 3.5rem;
+    letter-spacing: 0.08em;
+    padding-right: 2rem;
+  }
+  .c-section-title-line::after {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 21.25rem;
+    content: "";
+    display: block;
+    border-top: 0.6px solid #393327;
+  }
+}
+
+.c-section-title-line__sub {
+  display: block;
+  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #393327;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .c-section-title-line__sub {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+  }
+}
+
 .c-section-title {
   font-family: "Lora", serif;
   font-weight: 400;

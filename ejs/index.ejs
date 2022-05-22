@@ -107,6 +107,34 @@
     },
   ]; %> 
   <%- include('./common/_card3.ejs', {card3: membersVoice}); %> 
+
+  <% const flow = [
+    {
+      img:'./images/common/flow01.jpg',
+      alt: 'カウンセリング',
+      tag: 'STEP01',
+      heading: 'カウンセリング',
+      description: 'まずはカウンセリングでお体の状態やライフスタイルをお伺いし、今後の流れをご説明いたします。',
+    },
+    {
+      img:'./images/common/flow02.jpg',
+      alt: '測定・メニュー提案',
+      tag: 'STEP02',
+      heading: '測定・メニュー提案',
+      description: '体組成計で現在の身体の状態を確認します。その後、理想の身体になるためのトレーニングメニューをご提案させていただきます。',
+    },
+    {
+      img:'./images/common/flow03.jpg',
+      alt: 'トレーニング',
+      tag: 'STEP03',
+      heading: 'トレーニング',
+      description: '専属のトレーナーがマンツーマンであなたのなりたい身体に合わせたトレーニングをサポートいたします。',
+    },
+  ]; %> 
+
+  <div class="c-cards4">
+    <%- include('./common/_card4.ejs', {card4: flow}); %> 
+  </div>
 </main> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/script.js"></script>

@@ -1,0 +1,32 @@
+@use "global" as *;
+.c-cards4 {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.c-cards4__item {
+  @include mq("md") {
+    width: 28.3%;
+  }
+}
+
+.c-cards4__item:not(:first-of-type) {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: initial;
+  }
+}
+
+.c-cards4__item:not(:nth-of-type(3n + 1)) {
+  @include mq("md") {
+    margin-left: calc((100% - 28.3% * 3) / 2 );
+  }
+} 
+
+.c-cards4__item:nth-of-type(n + 4) {
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

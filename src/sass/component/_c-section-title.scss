@@ -1,0 +1,29 @@
+@use "global" as *;
+.c-section-title {
+  font-family: $font-en;
+  font-weight: 400;
+  font-size: rem(28);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: $black;
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(56);
+    letter-spacing: 0.08em;
+  }
+}
+.c-section-title__sub {
+  display: block;
+  font-family: $font-jp;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: $black;
+  text-align: center;
+  margin-top: rem(20);
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(40);
+  }
+}

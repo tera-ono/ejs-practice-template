@@ -35,6 +35,8 @@
     </div>
   </section>
 
+
+
   <% const profile = {
     main: 'OWNER’S PROFILE',
     sub: '代表プロフィール'
@@ -47,7 +49,39 @@
   }; %> 
   <%- include('./common/_section-title-line.ejs', {line_title: access}); %> 
 
-  
+  <% const featureCard = [
+    {
+      img:'./images/common/feature01.jpg',
+      alt: '「人に見せたくなるカラダ作り」にこだわったトレーニング',
+      heading: '「人に見せたくなるカラダ作り」に<br>こだわったトレーニング',
+      description: '体重を落とすだけではなく、人に見せたくなるカラダを目指したトレーニングをします。引き締まった魅力的なカラダになると、自信を持つことができます。',
+    },
+    {
+      img:'./images/common/feature02.jpg',
+      alt: 'お尻・太ももなどの部位を効率的に鍛える最先端マシンの導入',
+      heading: 'お尻・太ももなどの部位を<br>効率的に鍛える最先端マシンの導入',
+      description: 'お尻や太ももを引き締めるトレーニングをするためのヒップスラスターという最先端のマシンを導入。<br>女性の美尻をつくると有名なマシンです。',
+    },
+    {
+      img:'./images/common/feature03.jpg',
+      alt: '厳しい食事制限なし&トレーニングは週一～二回でOK',
+      heading: '厳しい食事制限なし&<br>トレーニングは週一～二回でOK',
+      description: '厳しい食事制限ではなく、正しい食事習慣を身に着けられるようにサポートします。<br>トレーニングは週1回、たったの50分でOKなので、仕事や家事が忙しくてもご利用いただけます。',
+    },
+    {
+      img:'./images/common/feature04.jpg',
+      alt: '確実に筋肉をつけるので<br>リバウンドと無縁',
+      heading: '確実に筋肉をつけるので<br>リバウンドと無縁',
+      description: '説明文',
+    },
+    {
+      img:'./images/common/feature05.jpg',
+      alt: '"ボディメイクを楽しむ"がモットーなので楽しく続けられる',
+      heading: 'ボディメイクを楽しむ"がモットー<br>なので楽しく続けられる',
+      description: 'MELIA FITNESSはその方のなりたい体に合わせて、無理のない継続できるトレーニングを提案いたします。トレーニングと正しい食生活を継続すると、１～２か月で効果を感じていただけます。あなたの体が引き締まっていくのを感じると楽しく前向きに続けることができます。',
+    },
+  ]; %>   
+  <%- include('./common/_card2.ejs', {card2: featureCard}); %>
 </main> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/script.js"></script>

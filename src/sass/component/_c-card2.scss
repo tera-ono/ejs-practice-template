@@ -1,0 +1,81 @@
+@use "global" as *;
+.c-card2 {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.c-card2:not(:first-of-type) {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(100);
+  }
+}
+.c-card2__img {
+  position: relative;
+  width: 100%;@include mq("md") {
+    margin-right: 6.51%;
+  }
+}
+.c-card2__img::before {
+  content: '';
+  display: block;
+  padding-top: 66.666%;
+}
+.c-card2__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-position: center;
+  object-fit: cover;
+}
+
+.c-card2__body {
+  @include mq("md") {
+    flex: 0 0 49.056%;
+  }
+}
+.c-card2__heading {
+  position: relative;
+  font-size: rem(18);
+  font-weight: 600;
+  line-height: calc(27 / 18);
+  letter-spacing: 0.05em;
+  color: $black;
+  padding-left: rem(7.5);
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid $primary;
+  }
+  @include mq("md") {
+    font-size: rem(28);
+    font-weight: 400;
+    line-height: calc(50 / 28);
+    letter-spacing: 0.1em;
+    padding-left: rem(20);
+  }
+}
+.c-card2__description {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(28.8 / 16);
+  letter-spacing: 0.02em;
+  color: $black;
+  margin-top: rem(12);
+  @include mq("md") {
+    line-height: 2;
+    margin-top: rem(20);
+  }
+}

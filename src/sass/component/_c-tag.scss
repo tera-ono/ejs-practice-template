@@ -1,0 +1,15 @@
+@use "global" as *;
+.c-tag {
+  display: inline-block;
+  padding: rem(6);
+  border: 1px solid $black;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: calc(21 / 14);
+  letter-spacing: 0.05em;
+  color: $black;
+  @include mq("md") {
+    font-size: rem(18);
+    letter-spacing: 0.1em;
+  }
+}

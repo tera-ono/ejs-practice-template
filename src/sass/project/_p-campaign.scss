@@ -1,0 +1,115 @@
+@use "global" as *;
+.p-campaign {
+  background-image: url(../../images/sp/campaign-bg-sp.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq("md") {
+    background-image: url(../../images/pc/campaign-bg-pc.jpg);
+  }
+} 
+
+.p-campaign__container {
+  background-color: $white;
+  border: 1px solid $primary;
+  padding: rem(40) rem(10);
+}
+
+.p-campaign__title {
+  font-size: rem(20);
+  font-weight: 600;
+  line-height: calc(30 / 20);
+  letter-spacing: 0.05em;
+  color: $primary;
+  padding: rem(12) 0;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  text-align: center;
+}
+
+.p-campaign__body {
+  margin-top: rem(78);
+  width: 74.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-campaign__heading {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  color: $black;
+  & span {
+    display: inline-block;
+    margin-left: rem(20);
+  }
+}
+.p-campaign__price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: rem(10);
+}
+.p-campaign__before {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 400;
+  line-height: 1;
+  color: $black;
+}
+.p-campaign__before-heading {
+  display: inline-block;
+  font-size: rem(16);
+  letter-spacing: 0.05em;
+}
+.p-campaign__before-price {
+  display: inline-block;
+  font-size: rem(24);
+  letter-spacing: 0.1em;
+  margin-top: rem(10);
+}
+
+.p-campaign__arrow {
+  width: rem(24);
+  margin: 0 rem(12);
+}
+
+.p-campaign__after {
+  position: relative;
+}
+.p-campaign__after-price {
+  width: rem(93);
+}
+.p-campaign__after-icon {
+  position: absolute;
+  top: rem(-70);
+  left: rem(22);
+  display: inline-block;
+  width: rem(124);
+}
+
+.p-campaign__meta {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.p-campaign__date {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 1;
+  color: $black;
+  margin-top: rem(15);
+}
+.p-campaign__link {
+  text-align: center;
+}
+.p-campaign__link-btn {
+  color: $white;
+  background: linear-gradient(265.98deg, #8B6C3A 23.24%, #B19464 55.28%, #8B6C3A 85.32%, #8B6C3A 85.32%);
+  margin-top: rem(52);
+}

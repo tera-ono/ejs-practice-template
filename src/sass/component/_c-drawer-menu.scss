@@ -1,5 +1,6 @@
 @use "global" as *;
 .c-drawer-menu {
+  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
@@ -15,12 +16,13 @@
     display: block;
     width: 100%;
     height: 100%;
-    visibility: hidden;
     opacity: 0;
     transition: $transition-duration ease-out;
   }
-  &.is-open::after {
+  &.is-open {
     visibility: visible;
+  }
+  &.is-open::after {
     opacity: 1;
     background: rgba(140, 109, 59, 0.7);
     z-index: -1;
@@ -36,7 +38,7 @@
   margin-left: auto;
   padding-top: rem(40);
   transform: translateX(100%);
-  transition: transform $transition-duration ease-out;
+  transition: transform 0.1s ease-in;
   // スクロール出来るように。下が詰まったら、padding-bottomで余白
   overflow: scroll;
   padding-bottom: rem(50);
@@ -44,7 +46,7 @@
 
 .c-drawer-menu.is-open > .c-drawer-menu__items {
   transform: none;
-  transition: transform $transition-duration ease-out;
+  transition: transform 0.3s 0.2s ease-out;
 }
 .c-drawer-menu__item {
   font-family: $font-en;

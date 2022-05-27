@@ -1,0 +1,28 @@
+@use "global" as *;
+.c-btn {
+  position: relative;
+  display: inline-block;
+  max-width: rem(420);
+  width: 100%;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  font-size: rem(16);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
+  text-align: center;
+}
+
+.c-btn__arrow {
+  display: none;
+  @include mq("md") {
+    position: absolute;
+    top: 50%;
+    right: rem(15);
+    transform: translateY(-50%);
+    display: inline-block;
+    width:  rem(12);
+  }
+}

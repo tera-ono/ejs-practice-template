@@ -1,0 +1,34 @@
+<footer class="l-footer p-footer">
+  <div class="p-footer__inner l-inner">
+    <div class="p-footer__container">
+      <div class="p-footer__logo c-logo">
+        <% if (pageId === 'home') { %>
+        <img src="../images/common/logo.svg" alt="ロゴ">
+        <% } else { %>
+          <a href="#">
+            <img src="../images/common/logo.svg" alt="ロゴ">
+          </a>
+        <% } %>
+      </div>
+      <nav class="p-footer__nav p-footer-nav">
+        <ul class="p-footer-nav__items">
+          <%# 配列drawerMenu は_header.ejs参照 %>
+          <%  for(let i of drawerMenu) { %>
+          <li class="p-footer-nav__item">
+            <a href="#"><%= i %></a>
+          </li>
+          <% } %>
+        </ul>
+        <div class="p-footer-nav__icons">
+          <%- include('./_icons.ejs'); %>
+        </div>
+      </nav>
+    </div>
+    <div class="p-footer__end">
+      <p class="p-footer__text">このサイトはMELINDA様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません。</p>
+      <p class="p-footer__copyright">
+        © 2021 MELIA FITNESS
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1745,6 +1745,16 @@ select::-ms-expand {
   }
 }
 
+.p-voice {
+  padding-bottom: 96px;
+  padding-bottom: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .p-voice {
+    padding-bottom: 12rem;
+  }
+}
+
 .p-voice__heading {
   font-size: 20px;
   font-size: 1.25rem;

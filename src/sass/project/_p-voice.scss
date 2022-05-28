@@ -1,6 +1,9 @@
 @use "global" as *;
 .p-voice {
-
+  padding-bottom: rem(96);
+  @include mq("md") {
+    padding-bottom: rem(192);
+  }
 }
 
 .p-voice__heading {

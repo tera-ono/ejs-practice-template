@@ -100,6 +100,13 @@
     font-size: rem(40);
   }
 }
+.p-campaign__before-tax {
+  display: none;
+  @include mq("md") {
+    display: inline-block;
+    font-size: rem(24);
+  }
+}
 
 .p-campaign__arrow {
   width: rem(24);

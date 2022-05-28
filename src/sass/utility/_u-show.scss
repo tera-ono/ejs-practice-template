@@ -6,3 +6,9 @@
 		display: block;
 	}
 }
+.u-show-inline-tab {
+	display: none;
+	@include mq("md") {
+		display: inline-block;
+	}
+}

@@ -1342,6 +1342,16 @@ select::-ms-expand {
   }
 }
 
+.p-campaign__before-tax {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-campaign__before-tax {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+}
+
 .p-campaign__arrow {
   width: 24px;
   width: 1.5rem;
@@ -1836,6 +1846,15 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .u-show-tab {
     display: block;
+  }
+}
+
+.u-show-inline-tab {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-show-inline-tab {
+    display: inline-block;
   }
 }
 

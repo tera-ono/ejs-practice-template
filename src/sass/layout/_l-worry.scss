@@ -1,0 +1,7 @@
+@use "global" as *;
+.l-worry {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(92);
+  }
+}

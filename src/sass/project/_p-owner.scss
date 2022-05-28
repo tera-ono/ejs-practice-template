@@ -1,0 +1,77 @@
+@use "global" as *;
+.p-owner__inner {
+  @include mq("md") {
+    max-width: 958px;
+  }
+}
+
+.p-owner__profile {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-owner__img {
+  position: relative;
+  width: 100%;
+  @include mq("md") {
+    flex: 0 0 rem(360);
+  }
+}
+.p-owner__img::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.p-owner__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-position: center;
+  object-fit: cover;
+}
+
+.p-owner__body {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(90);
+  }
+}
+.p-owner__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-owner__name {
+  font-size: rem(24);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: $black;
+}
+.p-owner__text {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  margin-top: rem(24);
+  @include mq("md") {
+    line-height: 2;
+    letter-spacing: 0.05em;
+    margin-top: rem(32);
+  }
+}
+
+.p-owner__message {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin-top: rem(83);
+  }
+}

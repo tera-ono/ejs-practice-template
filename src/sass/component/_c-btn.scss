@@ -13,6 +13,13 @@
   border-radius: 2px;
   filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
   text-align: center;
+  @include mq("md") {
+    max-width: rem(600);
+    padding-top: rem(26);
+    padding-bottom: rem(26);
+    font-size: rem(28);
+    letter-spacing: 0.2em;
+  }
 }
 
 .c-btn__arrow {
@@ -20,9 +27,9 @@
   @include mq("md") {
     position: absolute;
     top: 50%;
-    right: rem(15);
+    right: rem(30);
     transform: translateY(-50%);
     display: inline-block;
-    width:  rem(12);
+    width: rem(12);
   }
 }

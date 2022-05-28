@@ -8,6 +8,8 @@
   padding-bottom: rem(56);
   @include mq("md") {
     background-image: url(../../images/pc/campaign-bg-pc.jpg);
+    padding-top: rem(96);
+    padding-bottom: rem(96);
   }
 } 
 
@@ -15,6 +17,9 @@
   background-color: $white;
   border: 1px solid $primary;
   padding: rem(40) rem(10);
+  @include mq("md") {
+    padding: rem(64) rem(89);
+  }
 }
 
 .p-campaign__title {
@@ -27,13 +32,21 @@
   border-top: 1px solid $primary;
   border-bottom: 1px solid $primary;
   text-align: center;
+  @include mq("md") {
+    font-size: rem(40);
+    letter-spacing: 0.15em;
+  }
 }
 
 .p-campaign__body {
   margin-top: rem(78);
-  width: 74.5%;
+  max-width: rem(221);
   margin-left: auto;
   margin-right: auto;
+  @include mq("md") {
+    max-width: rem(606);
+    margin-top: rem(119);
+  }
 }
 .p-campaign__heading {
   font-size: rem(16);
@@ -45,12 +58,19 @@
     display: inline-block;
     margin-left: rem(20);
   }
+  @include mq("md") {
+    font-size: rem(28);
+  }
 }
 .p-campaign__price {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-top: rem(10);
+  @include mq("md") {
+    justify-content: flex-start;
+    margin-top: rem(14);
+  }
 }
 .p-campaign__before {
   display: flex;
@@ -64,17 +84,31 @@
   display: inline-block;
   font-size: rem(16);
   letter-spacing: 0.05em;
+  @include mq("md") {
+    font-size: rem(24);
+    letter-spacing: 0.15em;
+    
+  }
+
 }
 .p-campaign__before-price {
   display: inline-block;
   font-size: rem(24);
   letter-spacing: 0.1em;
   margin-top: rem(10);
+  @include mq("md") {
+    font-size: rem(40);
+  }
 }
 
 .p-campaign__arrow {
   width: rem(24);
   margin: 0 rem(12);
+  @include mq("md") {
+    width: rem(49);
+    margin-left: rem(97);
+    margin-right: rem(68);
+  }
 }
 
 .p-campaign__after {
@@ -82,6 +116,9 @@
 }
 .p-campaign__after-price {
   width: rem(93);
+  @include mq("md") {
+    width: rem(138);
+  }
 }
 .p-campaign__after-icon {
   position: absolute;
@@ -89,12 +126,21 @@
   left: rem(22);
   display: inline-block;
   width: rem(124);
+  @include mq("md") {
+    max-width: initial;
+    top: -95%;
+    left: rem(-20);
+    width: rem(236);
+  }
 }
 
 .p-campaign__meta {
   margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(60);
   }
 }
 
@@ -104,6 +150,11 @@
   line-height: 1;
   color: $black;
   margin-top: rem(15);
+  @include mq("md") {
+    font-size: rem(20);
+    margin-top: 0;
+    margin-left: rem(20);
+  }
 }
 .p-campaign__link {
   text-align: center;
@@ -111,5 +162,8 @@
 .p-campaign__link-btn {
   color: $white;
   background: linear-gradient(265.98deg, #8B6C3A 23.24%, #B19464 55.28%, #8B6C3A 85.32%, #8B6C3A 85.32%);
-  margin-top: rem(52);
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(52);
+  }
 }

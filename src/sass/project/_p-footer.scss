@@ -1,4 +1,59 @@
 @use "global" as *;
 .p-footer {
-  
+  background-color: $gray;
+  padding-top: rem(32);
+  padding-bottom: rem(28);
+  margin-bottom: rem(18);
+  @include mq("md") {
+    padding-top: rem(48);
+    padding-bottom: rem(40);
+    margin-bottom: rem(8);
+  }
+}
+
+.p-footer__inner {
+}
+.p-footer__container {
+  text-align: center;
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
+}
+
+.p-footer__nav {
+  margin-top: rem(20);
+}
+
+.p-footer__end {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(64);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.p-footer__text {
+  font-size: rem(12);
+  font-weight: 400;
+  line-height: calc(18 / 12);
+  letter-spacing: 0.02em;
+  color: $black;
+}
+
+.p-footer__copyright {
+  font-family: $font-en;
+  font-size: rem(12);
+  font-weight: 400;
+  line-height: calc(18 / 12);
+  letter-spacing: 0.1em;
+  color: $black;
+  margin-top: rem(40);
+  text-align: center;
+  @include mq("md") {
+    margin-top: 0;
+  }
 }

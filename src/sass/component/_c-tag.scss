@@ -9,6 +9,7 @@
   letter-spacing: 0.05em;
   color: $black;
   @include mq("md") {
+    padding: rem(9) rem(16);
     font-size: rem(18);
     letter-spacing: 0.1em;
   }

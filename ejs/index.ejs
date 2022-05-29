@@ -5,7 +5,8 @@
 
   <section class="l-voice p-voice">
     <div class="l-inner">
-      <h2 class="p-voice__heading">トレーニングを受けた会員様からこんな声が届いています。</h2>
+      <% let voice_heading = 'トレーニングを受けた会員様からこんな声が届いています。' %> 
+      <%- include('./common/_primary_gold-heading.ejs',{ heading: voice_heading}); %> 
       <div class="p-voice__cards c-cards1">
         <% const voiceCard = [
           {
@@ -97,6 +98,13 @@
   </div>
   <!-- /.section l-worry p-worry -->
 
+  <section class="l-feature p-feature">
+    <div class="l-inner">
+      <% let feature_heading = 'MELIA FITNESSは<br class="u-hidden-tab>そんな悩みをお持ちの方にこそ<br">ご利用していただきたい理由があります。' %> 
+      <%- include('./common/_primary_gold-heading.ejs',{ heading: feature_heading}); %> 
+    </div>
+  </section>
+  <!-- /.l-feature p-feature -->
   
 
   <% const access = {

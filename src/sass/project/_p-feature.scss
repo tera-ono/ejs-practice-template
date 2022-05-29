@@ -1,0 +1,30 @@
+@use "global" as *;
+.p-feature {
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq("md") {
+    padding-top: rem(96);
+    padding-bottom: rem(96);
+  }
+}
+.p-feature__title-arrow {
+  margin-top: rem(16);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.p-feature__title {
+  margin-top: rem(31.6);
+  @include mq("md") {
+    margin-top: rem(74.8);
+  }
+}
+
+.p-feature__cards {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

@@ -1061,6 +1061,24 @@ select::-ms-expand {
   }
 }
 
+.c-title-arrow {
+  display: inline-block;
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+  border-left: 1px solid #8B6C3A;
+  border-bottom: 1px solid #8B6C3A;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+@media screen and (min-width: 768px) {
+  .c-title-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .p-about {
     background-image: url(../images/common/bg-about.jpg);
@@ -1469,6 +1487,50 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-campaign__link-btn {
     margin-top: 3.25rem;
+  }
+}
+
+.p-feature {
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-bottom: 56px;
+  padding-bottom: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-feature {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.p-feature__title-arrow {
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-feature__title-arrow {
+    margin-top: 2rem;
+  }
+}
+
+.p-feature__title {
+  margin-top: 31.6px;
+  margin-top: 1.975rem;
+}
+@media screen and (min-width: 768px) {
+  .p-feature__title {
+    margin-top: 4.675rem;
+  }
+}
+
+.p-feature__cards {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-feature__cards {
+    margin-top: 5rem;
   }
 }
 

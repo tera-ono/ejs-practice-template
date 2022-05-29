@@ -1,0 +1,13 @@
+@use "global" as *;
+.c-title-arrow {
+  display: inline-block;
+  width: rem(30);
+  height: rem(30);
+  border-left: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  transform: rotate(-45deg);
+  @include mq("md") {
+    width: rem(56);
+    height: rem(56);
+  }
+}

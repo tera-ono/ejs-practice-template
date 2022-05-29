@@ -1,12 +1,18 @@
 <% let pageId = 'home'; %>
+<%# ヘッダーパーツ化 %> 
 <%- include('./common/_header.ejs', { pageId: pageId }); %>
+
 <main>
+<%# MVパーツ化 %> 
 <%- include('./common/_mv.ejs', { pageId: pageId }); %> 
 
   <section class="l-voice p-voice">
     <div class="l-inner">
+      <%# 金色のヘディング パーツ化 %> 
       <% let voice_heading = 'トレーニングを受けた会員様からこんな声が届いています。' %> 
       <%- include('./common/_primary_gold-heading.ejs',{ heading: voice_heading}); %> 
+
+      <%# カード1 パーツ化 %> 
       <div class="p-voice__cards c-cards1">
         <% const voiceCard = [
           {
@@ -39,6 +45,8 @@
 
   <section class="l-owner p-owner">
     <div class="p-owner__inner l-inner">
+
+      <%# 普通のタイトル・サブタイトル パーツ化 %> 
       <% const profile = {
         main: 'OWNER’S PROFILE',
         sub: '代表プロフィール'
@@ -52,6 +60,7 @@
         <div class="p-owner__body">
           <div class="p-owner__info">
             <span class="p-owner__name">Kailani</span>
+            <%# SNSアイコンリンク パーツ化 %> 
             <%- include('./common/_icons.ejs'); %> 
           </div>
           <p class="p-owner__text">
@@ -69,34 +78,8 @@
   </section>
   <!-- /.l-owner p-owner -->
 
-  <div class="section l-worry p-worry">
-    <div class="p-worry__img">
-      <picture>
-      <source media="(max-width: 767px)" srcset="./images/sp/depressed-bg_sp.jpg">
-      <source media="(min-width: 768px)" srcset="./images/pc/depressed-bg_pc.jpg">
-      <img src="./images/pc/depressed-bg_pc.jpg" alt="こんなお悩みありませんか？">
-      </picture>
-    </div>
-    <div class="p-worry__body l-inner">
-      <h3 class="p-worry__title">こんなお悩みありませんか？</h3>
-      <ul class="p-worry__items">
-        <% const worryItem = [
-          'トレーニングをしても本当に痩せられるか不安。',
-          'トレーニングしたいけど時間がない。',
-          '厳しい食事制限に耐えられるか分からない。',
-          '一時的に痩せてもリバウンドしないか心配。',
-          'ダイエットに失敗してきたので続けられるか不安。',
-      ]; %> 
-        <% for(let i of worryItem) { %> 
-        <li class="p-worry__item">
-          <img src="./images/common/Vector.png" alt="アイコン">
-          <%= i; %> 
-        </li>
-        <% } %> 
-      </ul>
-    </div>
-  </div>
-  <!-- /.section l-worry p-worry -->
+  <%# こんな悩みありませんか セクション パーツ化 %> 
+  <%- include('./common/_section-worry.ejs'); %> 
 
   <section class="l-feature p-feature">
     <div class="l-inner">
@@ -113,8 +96,8 @@
           sub: 'MELIA FITNESSが選ばれる5つの特徴'
         };
       %> 
-
-      <div class="p-feature__title"><%- include('./common/_section-title-normal.ejs',{normal_title: feature });  %>
+      <div class="p-feature__title">
+        <%- include('./common/_section-title-normal.ejs',{normal_title: feature }); %>
       </div>
 
 

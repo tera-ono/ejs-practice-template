@@ -189,30 +189,8 @@
   </section>
   <!-- /.l-member-voice p-member-voice -->
 
-  <section class="l-price p-price">
-    <div class="l-inner">
-
-      <% const price_title = {
-          main: 'PRICE',
-          sub: 'ご利用料金'
-        }
-       %> 
-      <%- include('./common/_section-title-normal.ejs',{normal_title: price_title }) %> 
-
-      <div class="p-price__box">
-        <span class="p-price__month">月額</span>
-        <span class="p-price__price">¥29,800</span>
-        <span class="p-price__tax">税込</span>
-      </div>
-      <div class="p-price__text-box">
-        <p class="p-price__text1">週1で通うMELIA FITNESSの<br class="u-hidden-tab">
-          パーソナルトレーニング</p>
-        <p class="p-price__text2">トレーナーとマンツーマンで理想的なボディメイクを目指します。</p>
-        <p class="p-price__text3">※Kailaniご指名の場合は月額￥39,800</p>
-      </div>
-    </div>
-  </section>
-  <!-- /.l-price p-price -->
+  <%# priceセクション パーツ化 %> 
+  <%- include('./common/_price_section.ejs'); %> 
 
   <% const access = {
     main: 'ACCESS',

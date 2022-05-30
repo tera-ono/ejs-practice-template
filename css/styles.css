@@ -2043,6 +2043,12 @@ select::-ms-expand {
   color: #8B6C3A;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .p-price__box {
+    margin-top: 5rem;
+  }
+}
+
 .p-price__month {
   font-size: 22px;
   font-size: 1.375rem;
@@ -2075,6 +2081,13 @@ select::-ms-expand {
 
 .p-price__text-box {
   text-align: center;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-price__text-box {
+    margin-top: 2.25rem;
+  }
 }
 
 .p-price__text1 {
@@ -2084,8 +2097,11 @@ select::-ms-expand {
   line-height: 1.3333333333;
   letter-spacing: 0.1em;
   color: #8B6C3A;
-  margin-top: 32px;
-  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-price__text1 {
+    font-size: 1.5rem;
+  }
 }
 
 .p-price__text2 {
@@ -2097,6 +2113,12 @@ select::-ms-expand {
   margin-top: 8px;
   margin-top: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .p-price__text2 {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
 
 .p-price__text3 {
   font-size: 16px;
@@ -2107,6 +2129,11 @@ select::-ms-expand {
   color: #393327;
   margin-top: 33px;
   margin-top: 2.0625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-price__text3 {
+    font-size: 1.5rem;
+  }
 }
 
 .c-primary-heading {

@@ -12,16 +12,13 @@
 }
 
 .p-price__box {
-  // display: flex;
-  // justify-content: center;
-  // align-items: baseline;
   margin-top: rem(40);
   line-height: 1;
   letter-spacing: 0.1em;
   color: $primary;
   text-align: center;
   @include mq("md") {
-    
+    margin-top: rem(80);
   }
 }
 .p-price__month {
@@ -47,6 +44,10 @@
 
 .p-price__text-box {
   text-align: center;
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(36);
+  }
 }
 .p-price__text1 {
   font-size: rem(18);
@@ -54,7 +55,9 @@
   line-height: calc(24 / 18);
   letter-spacing: 0.1em;
   color: $primary;
-  margin-top: rem(32);
+  @include mq("md") {
+    font-size: rem(24);
+  }
 }
 .p-price__text2 {
   font-size: rem(14);
@@ -62,6 +65,10 @@
   letter-spacing: 0.1em;
   color: $primary;
   margin-top: rem(8);
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(32);
+  }
 }
 .p-price__text3 {
   font-size: rem(16);
@@ -70,4 +77,7 @@
   letter-spacing: 0.02em;
   color: $black;
   margin-top: rem(33);
+  @include mq("md") {
+    font-size: rem(24);
+  }
 }

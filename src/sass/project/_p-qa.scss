@@ -10,7 +10,7 @@
 
 .p-qa__inner {
   @include mq("md") {
-    max-width: 897px;
+    max-width: 960px;
   }
 }
 
@@ -21,6 +21,19 @@
   }
 }
 
+.p-qa__item {
+  @include mq("md") {
+    padding-left: rem(35);
+  }
+}
+
+.p-qa__item:not(:last-of-type) {
+  padding-bottom: rem(24);
+  border-bottom: 1px solid #E8E8E8;
+  @include mq("md") {
+    padding-bottom: rem(40);
+  }
+}
 
 .p-qa__item + .p-qa__item  {
   margin-top: rem(24);
@@ -37,11 +50,11 @@
   display: flex;
   align-items: baseline;
   margin-top: rem(12);
-  padding-bottom: rem(24);
-  border-bottom: 1px solid #E8E8E8;
+  // padding-bottom: rem(24);
+  // border-bottom: 1px solid #E8E8E8;
   @include mq("md") {
     margin-top: rem(36);
-    padding-bottom: rem(40);
+    
   }
 }
 .p-qa__icon {

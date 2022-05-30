@@ -267,36 +267,15 @@
 ];
  %> 
   <%- include('./common/_qa_section.ejs',{qa_title: qa_title, qa: qa}); %> 
-
-  <%# Q&Aセクション パーツ化 %> 
-  <% const qa_title_02 = {
-    main: 'QUESTION & ANSWER',
-    sub: '質問するぜ'
-  }; %>
-  <% qa_02 = [
-  {
-    question: '骨折をしたばかりですが？',
-    answer: '個人差はありますが、週に1回のパーソナルトレーニングと自宅でのトレーニング、食生活を改善することで、２か月で効果を感じていただくことができます。'
-  },
-  {
-    question: '体力に自信があります。大丈夫でしょうか？',
-    answer: 'MELIA FITNESSは専属のトレーナーがマンツーマンでトレーニングのサポートをしております。また、無理なトレーニングはしないため、運動をしたことがなく、体力に自信がない方でも安心して取り組んでいただけます。'
-  },
-  {
-    question: 'ムキムキになりますか？',
-    answer: 'リバウンドの原因は筋肉が落ちて基礎代謝が下がってしまうことが原因であると考えられています。<br>MELIA FITNESSのプログラムでは、確実に筋肉をつけられますので、リバウンドしにくい体になれます。'
-  },
-  {
-    question: '楽しい食事制限をする自信がありません。',
-    answer: 'MELIA FITNESSでは食事の選び方や食べ方など食事改善についてアドバイスを行っております。<br>厳しい食事制限はありませんのでご安心ください。'
-  },
-  {
-    question: 'お金がないのですがトレーニングの際に必要なものはありますか？',
-    answer: 'トレーニングウェアとトレーニング時に使用するシューズをおもちください。<br>お持ちでない場合はレンタルをご用意しておりますのでご利用ください。'
-  },
-];
- %> 
-  <%- include('./common/_qa_section.ejs',{qa_title: qa_title_02, qa: qa_02}); %> 
+  
+  
+  <div class="c-gim-img">
+    <picture>
+    <source media="(max-width: 767px)" srcset="./images/sp/gym-sp.jpg">
+    <source media="(min-width: 768px)" srcset="./images/pc/gym-pc.jpg">
+    <img src="./images/pc/gym-pc.jpg" alt="ジムの室内雰囲気">
+    </picture>
+  </div>
 
   <% const access = {
     main: 'ACCESS',

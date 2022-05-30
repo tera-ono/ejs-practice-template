@@ -277,43 +277,8 @@
     </picture>
   </div>
 
-  <section class="l-access p-access">
-    <div class="l-inner">
-      <% const access = {
-        main: 'ACCESS',
-        sub: 'アクセス',
-      }; %> 
-      <%- include('./common/_section-title-line.ejs', {line_title: access}); %> 
-
-      <div class="p-access__container">
-        <div class="p-access__body">
-          <h4 class="p-access__name">MELIA FITNESS
-          <span class="p-access__kana">パーソナルトレーニングジム メリアフィットネス</span>
-          </h4>
-          <ul class="p-access__items">
-            <li class="p-access__item">
-              〒170-6045<br>東京都豊島区東池袋3-1-1 サンシャイン60 45階
-            </li>
-            <li class="p-access__item">
-              JR池袋駅より徒歩５分
-            </li>
-            <li class="p-access__item">
-              TEL 00-0000-0000
-            </li>
-            <li class="p-access__item">
-              営業時間　10：00～22：00
-            </li>
-          </ul>
-        </div>
-        <!-- /p-access__body -->
-        <div class="p-access__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8683827588134!2d139.71600531489705!3d35.72945533493372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.7!3m3!1m2!1s0x60188b15d9f609c1%3A0x5c3747cb138c4762!2z44K144O844OW44Kz44O844OXIOaxoOiii-OCteODs-OCt-ODo-OCpOODszYw!5e0!3m2!1sja!2sjp!4v1653949308916!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <!-- /.p-access__container-->
-    </div>
-  </section>
-  <!-- /.l-access p-access -->
+  <%# accessセクション パーツ化 %> 
+  <%- include('./common/_map_section.ejs'); %> 
 
   
 

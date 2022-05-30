@@ -1,0 +1,73 @@
+@use "global" as *;
+.p-price {
+  background-image: url(../images/sp/price-bg_sp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq("md") {
+    background-image: url(../images/pc/price-bg_pc.jpg);
+  }
+}
+
+.p-price__box {
+  // display: flex;
+  // justify-content: center;
+  // align-items: baseline;
+  margin-top: rem(40);
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: $primary;
+  text-align: center;
+  @include mq("md") {
+    
+  }
+}
+.p-price__month {
+  font-size: rem(22);
+  font-weight: 400;
+  vertical-align: super;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
+.p-price__price {
+  font-size: rem(50);
+  font-weight: 300;
+  @include mq("md") {
+    font-size: rem(80);
+  }
+}
+.p-price__tax {
+  font-size: rem(16);
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.p-price__text-box {
+  text-align: center;
+}
+.p-price__text1 {
+  font-size: rem(18);
+  font-weight: 600;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.1em;
+  color: $primary;
+  margin-top: rem(32);
+}
+.p-price__text2 {
+  font-size: rem(14);
+  line-height: calc(21 / 14);
+  letter-spacing: 0.1em;
+  color: $primary;
+  margin-top: rem(8);
+}
+.p-price__text3 {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(27 / 16);
+  letter-spacing: 0.02em;
+  color: $black;
+  margin-top: rem(33);
+}

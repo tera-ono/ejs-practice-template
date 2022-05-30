@@ -1,0 +1,39 @@
+@use "global" as *;
+.p-member-voice {
+  position: relative;
+  padding-bottom: rem(56);
+  @include mq("md") {
+    padding-bottom: rem(99);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    display: inline-block;
+    background-image: url(../images/common/bg-members-voice.jpg);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+.p-member-voice__inner {
+  
+}
+
+.p-member-voice__title {
+  margin-top: rem(56);
+  @include mq("md") {
+    margin-top: rem(96);
+  }
+}
+
+.p-member-voice__cards {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

@@ -35,7 +35,6 @@
   line-height: 1;
   letter-spacing: 0.1em;
   color: $black;
-  margin-top: rem(20);
   @include mq("md") {
     font-size: rem(16);
     margin-top: rem(40);

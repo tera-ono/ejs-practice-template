@@ -3,7 +3,6 @@
   @include mq("md") {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 .c-card3:nth-of-type(odd) {
@@ -51,6 +50,7 @@
 .c-card3__body {
   @include mq("md") {
     flex: 0 0 49.056%;
+    margin-top: initial;
   }
 }
 .c-card3__heading {

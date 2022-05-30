@@ -268,7 +268,7 @@
  %> 
   <%- include('./common/_qa_section.ejs',{qa_title: qa_title, qa: qa}); %> 
   
-  
+  <%# 途中にあるジムのイメージ画像 %> 
   <div class="c-gim-img">
     <picture>
     <source media="(max-width: 767px)" srcset="./images/sp/gym-sp.jpg">
@@ -280,13 +280,8 @@
   <%# accessセクション パーツ化 %> 
   <%- include('./common/_map_section.ejs'); %> 
 
-  
-
-  
-
-  
-
-
+  <%# 期間限定無料体験キャンペーン バナー %>  
+  <%- include('./common/_campaign_banner.ejs'); %>  
 </main> 
 
 <%- include('./common/_footer.ejs',{pageId: pageId}); %> 

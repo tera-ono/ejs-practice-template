@@ -25,6 +25,9 @@
 
 .c-card4__body {
   margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(9);
+  }
 }
 .c-card4__tag {
   display: inline-block;

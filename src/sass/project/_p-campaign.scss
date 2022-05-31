@@ -11,14 +11,14 @@
     padding-top: rem(96);
     padding-bottom: rem(96);
   }
-} 
+}
 
 .p-campaign__container {
   background-color: $white;
   border: 1px solid $primary;
   padding: rem(40) rem(10);
   @include mq("md") {
-    padding: rem(64) rem(89);
+    padding: rem(58) rem(89);
   }
 }
 
@@ -45,7 +45,7 @@
   margin-right: auto;
   @include mq("md") {
     max-width: rem(606);
-    margin-top: rem(119);
+    margin-top: rem(130);
   }
 }
 .p-campaign__heading {
@@ -54,12 +54,15 @@
   line-height: 1;
   letter-spacing: 0.15em;
   color: $black;
+  @include mq("md") {
+    font-size: rem(28);
+  }
   & span {
     display: inline-block;
     margin-left: rem(20);
-  }
-  @include mq("md") {
-    font-size: rem(28);
+    @include mq("md") {
+      margin-left: rem(37);
+    }
   }
 }
 .p-campaign__price {
@@ -69,6 +72,7 @@
   margin-top: rem(10);
   @include mq("md") {
     justify-content: flex-start;
+    align-items: center;
     margin-top: rem(14);
   }
 }
@@ -87,9 +91,7 @@
   @include mq("md") {
     font-size: rem(24);
     letter-spacing: 0.15em;
-    
   }
-
 }
 .p-campaign__before-price {
   display: inline-block;
@@ -97,7 +99,8 @@
   letter-spacing: 0.1em;
   margin-top: rem(10);
   @include mq("md") {
-    font-size: rem(40);
+    font-size: rem(34);
+    margin-top: rem(22);
   }
 }
 .p-campaign__before-tax {
@@ -114,7 +117,8 @@
   @include mq("md") {
     width: rem(49);
     margin-left: rem(97);
-    margin-right: rem(68);
+    margin-top: rem(28);
+    margin-right: rem(84);
   }
 }
 
@@ -147,7 +151,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: rem(60);
+    margin-top: rem(46);
   }
 }
 
@@ -168,7 +172,13 @@
 }
 .p-campaign__link-btn {
   color: $white;
-  background: linear-gradient(265.98deg, #8B6C3A 23.24%, #B19464 55.28%, #8B6C3A 85.32%, #8B6C3A 85.32%);
+  background: linear-gradient(
+    265.98deg,
+    #8b6c3a 23.24%,
+    #b19464 55.28%,
+    #8b6c3a 85.32%,
+    #8b6c3a 85.32%
+  );
   margin-top: rem(32);
   @include mq("md") {
     margin-top: rem(52);

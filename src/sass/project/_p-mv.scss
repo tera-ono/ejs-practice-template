@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(-24px);
   }
 }
 
@@ -30,8 +31,13 @@
   letter-spacing: 0.1em;
   color: $black;
   @include mq("md") {
-    font-size: rem(32);
-    line-height: calc(60 / 32);
+    font-size: rem(40);
+    line-height: calc(60 / 40);
+  }
+}
+.p-mv__title-small {
+  @include mq("md") {
+    font-size: rem(31);
   }
 }
 

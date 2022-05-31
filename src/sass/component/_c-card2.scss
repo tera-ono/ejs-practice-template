@@ -11,19 +11,22 @@
 .c-card2:not(:first-of-type) {
   margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(100);
+    margin-top: rem(75);
   }
 }
 .c-card2__img {
   position: relative;
   width: 100%;@include mq("md") {
-    margin-right: 6.51%;
+    margin-right: 7.11%;
   }
 }
 .c-card2__img::before {
   content: '';
   display: block;
   padding-top: 66.666%;
+  @include mq("md") {
+    padding-top: 73.3333%;
+  }
 }
 .c-card2__img img {
   position: absolute;
@@ -38,7 +41,8 @@
 
 .c-card2__body {
   @include mq("md") {
-    flex: 0 0 49.056%;
+    flex: 0 0 50.656%;
+    margin-top: 0;
   }
 }
 .c-card2__heading {

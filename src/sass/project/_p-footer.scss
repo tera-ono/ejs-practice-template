@@ -5,7 +5,7 @@
   padding-bottom: rem(28);
   margin-bottom: rem(18);
   @include mq("md") {
-    padding-top: rem(48);
+    padding-top: rem(39);
     padding-bottom: rem(40);
     margin-bottom: rem(8);
   }
@@ -24,6 +24,9 @@
 
 .p-footer__nav {
   margin-top: rem(20);
+  @include mq("md") {
+    margin-top: 0;
+  }
 }
 
 .p-footer__end {

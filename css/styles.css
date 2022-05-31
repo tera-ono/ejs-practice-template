@@ -210,7 +210,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .l-owner {
-    margin-top: 12rem;
+    margin-top: 10.5625rem;
   }
 }
 
@@ -424,7 +424,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .c-card2:not(:first-of-type) {
-    margin-top: 6.25rem;
+    margin-top: 4.6875rem;
   }
 }
 
@@ -434,7 +434,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .c-card2__img {
-    margin-right: 6.51%;
+    margin-right: 7.11%;
   }
 }
 
@@ -442,6 +442,11 @@ select::-ms-expand {
   content: "";
   display: block;
   padding-top: 66.666%;
+}
+@media screen and (min-width: 768px) {
+  .c-card2__img::before {
+    padding-top: 73.3333%;
+  }
 }
 
 .c-card2__img img {
@@ -461,8 +466,9 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .c-card2__body {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 49.056%;
-            flex: 0 0 49.056%;
+        -ms-flex: 0 0 50.656%;
+            flex: 0 0 50.656%;
+    margin-top: 0;
   }
 }
 
@@ -549,7 +555,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .c-card3:not(:first-of-type) {
-    margin-top: 6.25rem;
+    margin-top: 5.3125rem;
   }
 }
 
@@ -562,6 +568,11 @@ select::-ms-expand {
   content: "";
   display: block;
   padding-top: 66.666%;
+}
+@media screen and (min-width: 768px) {
+  .c-card3__img::before {
+    padding-top: 74.466%;
+  }
 }
 
 .c-card3__img img {
@@ -581,8 +592,8 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .c-card3__body {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 49.056%;
-            flex: 0 0 49.056%;
+        -ms-flex: 0 0 50.956%;
+            flex: 0 0 50.956%;
     margin-top: 0;
     margin-top: initial;
   }
@@ -665,6 +676,11 @@ select::-ms-expand {
 .c-card4__body {
   margin-top: 24px;
   margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .c-card4__body {
+    margin-top: 0.5625rem;
+  }
 }
 
 .c-card4__tag {
@@ -896,6 +912,14 @@ select::-ms-expand {
   padding: 0 0.775rem;
 }
 
+.c-icons__link:first-of-type {
+  padding-left: 0;
+}
+
+.c-icons__link:last-of-type {
+  padding-right: 0;
+}
+
 .c-line-link {
   display: inline-block;
   font-size: 14px;
@@ -927,7 +951,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .c-logo {
-    width: 8.125rem;
+    width: 9rem;
   }
 }
 
@@ -1413,7 +1437,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-campaign__container {
-    padding: 4rem 5.5625rem;
+    padding: 3.625rem 5.5625rem;
   }
 }
 
@@ -1448,7 +1472,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-campaign__body {
     max-width: 37.875rem;
-    margin-top: 7.4375rem;
+    margin-top: 8.125rem;
   }
 }
 
@@ -1460,14 +1484,19 @@ select::-ms-expand {
   letter-spacing: 0.15em;
   color: #393327;
 }
+@media screen and (min-width: 768px) {
+  .p-campaign__heading {
+    font-size: 1.75rem;
+  }
+}
 .p-campaign__heading span {
   display: inline-block;
   margin-left: 20px;
   margin-left: 1.25rem;
 }
 @media screen and (min-width: 768px) {
-  .p-campaign__heading {
-    font-size: 1.75rem;
+  .p-campaign__heading span {
+    margin-left: 2.3125rem;
   }
 }
 
@@ -1489,6 +1518,9 @@ select::-ms-expand {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 0.875rem;
   }
 }
@@ -1532,7 +1564,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-campaign__before-price {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
+    margin-top: 1.375rem;
   }
 }
 
@@ -1556,7 +1589,8 @@ select::-ms-expand {
   .p-campaign__arrow {
     width: 3.0625rem;
     margin-left: 6.0625rem;
-    margin-right: 4.25rem;
+    margin-top: 1.75rem;
+    margin-right: 5.25rem;
   }
 }
 
@@ -1609,7 +1643,7 @@ select::-ms-expand {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 3.75rem;
+    margin-top: 2.875rem;
   }
 }
 
@@ -1636,7 +1670,7 @@ select::-ms-expand {
 
 .p-campaign__link-btn {
   color: #FFFFFF;
-  background: linear-gradient(265.98deg, #8B6C3A 23.24%, #B19464 55.28%, #8B6C3A 85.32%, #8B6C3A 85.32%);
+  background: linear-gradient(265.98deg, #8b6c3a 23.24%, #b19464 55.28%, #8b6c3a 85.32%, #8b6c3a 85.32%);
   margin-top: 32px;
   margin-top: 2rem;
 }
@@ -1654,8 +1688,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-feature {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 6.25rem;
+    padding-bottom: 7.4375rem;
   }
 }
 
@@ -1779,7 +1813,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-footer {
-    padding-top: 3rem;
+    padding-top: 2.4375rem;
     padding-bottom: 2.5rem;
     margin-bottom: 0.5rem;
   }
@@ -1803,6 +1837,11 @@ select::-ms-expand {
 .p-footer__nav {
   margin-top: 20px;
   margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__nav {
+    margin-top: 0;
+  }
 }
 
 .p-footer__end {
@@ -2017,6 +2056,8 @@ select::-ms-expand {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
   }
 }
 
@@ -2030,8 +2071,14 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-mv__title {
-    font-size: 2rem;
-    line-height: 1.875;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-mv__title-small {
+    font-size: 1.9375rem;
   }
 }
 
@@ -2215,6 +2262,8 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-price {
     background-image: url(../images/pc/price-bg_pc.jpg);
+    padding-top: 5.625rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -2229,6 +2278,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-price__box {
     margin-top: 5rem;
+    margin-left: -5rem;
   }
 }
 
@@ -2240,7 +2290,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-price__month {
-    font-size: 2.5rem;
+    font-size: 2.5625rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -2261,6 +2312,11 @@ select::-ms-expand {
   font-weight: 400;
   vertical-align: super;
 }
+@media screen and (min-width: 768px) {
+  .p-price__tax {
+    font-size: 1.5625rem;
+  }
+}
 
 .p-price__text-box {
   text-align: center;
@@ -2269,7 +2325,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-price__text-box {
-    margin-top: 2.25rem;
+    margin-top: 2.625rem;
   }
 }
 
@@ -2434,7 +2490,7 @@ select::-ms-expand {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.7;
   letter-spacing: 0.05em;
   color: #8B6C3A;
   text-align: center;

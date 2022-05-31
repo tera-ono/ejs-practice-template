@@ -69,7 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: rem(10);
+  margin-top: rem(25);
   @include mq("md") {
     justify-content: flex-start;
     align-items: center;
@@ -126,21 +126,19 @@
   position: relative;
 }
 .p-campaign__after-price {
-  width: rem(93);
+  width: rem(63);
   @include mq("md") {
     width: rem(138);
   }
 }
 .p-campaign__after-icon {
   position: absolute;
-  top: rem(-70);
-  left: rem(22);
+  max-width: initial;
+  top: rem(-95);
+  left: rem(-19);
   display: inline-block;
   width: rem(124);
   @include mq("md") {
-    max-width: initial;
-    top: -95%;
-    left: rem(-20);
     width: rem(236);
   }
 }

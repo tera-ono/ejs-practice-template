@@ -1,6 +1,6 @@
 @use "global" as *;
 .p-qa {
-  padding-top: rem(56);
+  padding-top: rem(67);
   padding-bottom: rem(56);
   @include mq("md") {
     padding-top: rem(96);
@@ -36,7 +36,7 @@
 }
 
 .p-qa__item + .p-qa__item  {
-  margin-top: rem(24);
+  margin-top: rem(21);
   @include mq("md") {
     margin-top: rem(40);
   }
@@ -49,7 +49,7 @@
 .p-qa__answer {
   display: flex;
   align-items: baseline;
-  margin-top: rem(12);
+  margin-top: rem(15);
   // padding-bottom: rem(24);
   // border-bottom: 1px solid #E8E8E8;
   @include mq("md") {

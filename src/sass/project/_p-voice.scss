@@ -1,20 +1,7 @@
 @use "global" as *;
 
-.c-primary-heading {
-  font-size: rem(20);
-  font-weight: 600;
-  line-height: 1.7;
-  letter-spacing: 0.05em;
-  color: $primary;
-  text-align: center;
-  @include mq("md") {
-    font-size: rem(32);
-    letter-spacing: 0.1em;
-  }
-}
-
 .p-voice__cards {
-  margin-top: rem(40);
+  margin-top: rem(35);
   @include mq("md") {
     margin-top: rem(80);
   }

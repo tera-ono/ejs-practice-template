@@ -1,7 +1,7 @@
 @use "global" as *;
 .p-member-voice {
   position: relative;
-  padding-bottom: rem(56);
+  padding-bottom: rem(62);
   @include mq("md") {
     padding-bottom: rem(99);
   }
@@ -20,19 +20,16 @@
     z-index: -1;
   }
 }
-.p-member-voice__inner {
-  
-}
 
 .p-member-voice__title {
-  margin-top: rem(56);
+  margin-top: rem(63);
   @include mq("md") {
     margin-top: rem(96);
   }
 }
 
 .p-member-voice__cards {
-  margin-top: rem(40);
+  margin-top: rem(47);
   @include mq("md") {
     margin-top: rem(80);
   }

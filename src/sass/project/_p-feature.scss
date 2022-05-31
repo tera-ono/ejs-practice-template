@@ -1,7 +1,7 @@
 @use "global" as *;
 .p-feature {
   padding-top: rem(48);
-  padding-bottom: rem(56);
+  padding-bottom: rem(61);
   @include mq("md") {
     padding-top: rem(100);
     padding-bottom: rem(119);
@@ -16,14 +16,14 @@
 }
 
 .p-feature__title {
-  margin-top: rem(31.6);
+  margin-top: rem(37.7);
   @include mq("md") {
     margin-top: rem(74.8);
   }
 }
 
 .p-feature__cards {
-  margin-top: rem(40);
+  margin-top: rem(43);
   @include mq("md") {
     margin-top: rem(80);
   }

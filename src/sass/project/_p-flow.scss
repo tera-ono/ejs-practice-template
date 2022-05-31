@@ -1,7 +1,7 @@
 @use "global" as *;
 .p-flow {
   background-color: $gray;
-  padding-top: rem(56);
+  padding-top: rem(64);
   padding-bottom: rem(56);
   @include mq("md") {
     padding-top: rem(96);
@@ -10,7 +10,7 @@
 }
 
 .p-flow__cards {
-  margin-top: rem(40);
+  margin-top: rem(46);
   @include mq("md") {
     margin-top: rem(80);
   }

@@ -38,7 +38,7 @@
   margin-left: auto;
   padding-top: rem(40);
   transform: translateX(100%);
-  transition: transform 0.1s ease-in;
+  transition:  0.1s ease-out;
   // スクロール出来るように。下が詰まったら、padding-bottomで余白
   overflow: scroll;
   padding-bottom: rem(50);

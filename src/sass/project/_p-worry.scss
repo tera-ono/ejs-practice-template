@@ -71,9 +71,9 @@
   color: $black;
 
   & > img {
-    width: rem(24);
-    height: rem(24);
-    margin-right: rem(8);
+    width: rem(18);
+    height: rem(18);
+    margin-right: rem(15);
   } 
   @include mq("md") {
     font-size: rem(18);
@@ -81,5 +81,8 @@
 }
 
 .p-worry__item:not(:first-of-type) {
-  margin-top: rem(20);
+  margin-top: rem(14.4);
+  @include mq("md") {
+    margin-top: rem(20);
+  }
 }

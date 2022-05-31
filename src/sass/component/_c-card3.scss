@@ -34,10 +34,7 @@
 .c-card3__img::before {
   content: '';
   display: block;
-  padding-top: 66.666%;
-  @include mq("md") {
-    padding-top: 74.466%;
-  }
+  padding-top: 75%;
 }
 .c-card3__img img {
   position: absolute;
@@ -51,6 +48,7 @@
 }
 
 .c-card3__body {
+  margin-top: rem(19);
   @include mq("md") {
     flex: 0 0 50.956%;
     margin-top: initial;

@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: rem(56);
+  padding-top: rem(64);
   padding-bottom: rem(56);
   @include mq("md") {
     background-image: url(../images/pc/price-bg_pc.jpg);

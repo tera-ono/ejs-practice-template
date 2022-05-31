@@ -1,6 +1,6 @@
 @use "global" as *;
 .p-access {
-  padding-top: rem(56);
+  padding-top: rem(66);
   padding-bottom: rem(56);
   @include mq("md") {
     padding-top: rem(96);
@@ -9,7 +9,7 @@
 }
 
 .p-access__container {
-  margin-top: rem(40);
+  margin-top: rem(49);
   @include mq("md") {
     margin-top: rem(80);
     display: flex;
@@ -36,7 +36,7 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.02em;
-  margin-top: rem(10);
+  margin-top: rem(17);
   @include mq("md") {
     font-size: rem(16);
     margin-top: rem(14);
@@ -44,7 +44,7 @@
 }
 
 .p-access__items {
-  margin-top: rem(20);
+  margin-top: rem(25);
   @include mq("md") {
     margin-top: rem(40);
   }
@@ -59,6 +59,10 @@
     line-height: 2;
   }
 }
+.p-access__item--num {
+  letter-spacing: 0.1em;
+}
+
 .p-access__item + .p-access__item {
   margin-top: rem(12);
   @include mq("md") {

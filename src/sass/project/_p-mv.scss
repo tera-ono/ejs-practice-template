@@ -1,17 +1,47 @@
 @use "global" as *;
 .p-mv {
-  background-image: url(../images/sp/mv-bg_sp.jpg);
   background-position: left 30%;
+  background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - rem(68));
   padding-top: rem(40);
   text-align: center;
   @include mq("md") {
-    background-image: url(../images/pc/mv-bg_pc.jpg);
     background-position: center right 30%;
     height: rem(681);
     padding-top: 0;
     text-align: start;
+  }
+}
+
+#home .p-mv {
+  background-image: url(../images/sp/mv-bg_sp.jpg);
+  @include mq("md") {
+    background-image: url(../images/pc/mv-bg_pc.jpg);
+  }
+}
+#owners .p-mv {
+  background-image: url(../images/common/owner.jpg);
+  background-position: right 30%;
+  @include mq("md") {
+    background-position: center 15%;
+  }
+  & .p-mv__title, .p-mv__sub  {
+    color: $white;
+    text-shadow: 0px 0px 5px #444444;
+  }
+}
+#feature .p-mv {
+  background-image: url(../images/sp/yoga-sp.png);
+  background-position: right -113px center;
+  @include mq("md") {
+    background-image: url(../images/pc/yoga_pc.png);
+    background-position: center right 30%;
+  }
+
+  & .p-mv__title, .p-mv__sub  {
+    color: $primary;
+    text-shadow: 1px 1px 1px #525050;
   }
 }
 

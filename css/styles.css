@@ -2058,8 +2058,8 @@ select::-ms-expand {
 }
 
 .p-mv {
-  background-image: url(../images/sp/mv-bg_sp.jpg);
   background-position: left 30%;
+  background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 4.25rem);
   padding-top: 40px;
@@ -2068,12 +2068,49 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-mv {
-    background-image: url(../images/pc/mv-bg_pc.jpg);
     background-position: center right 30%;
     height: 42.5625rem;
     padding-top: 0;
     text-align: start;
   }
+}
+
+#home .p-mv {
+  background-image: url(../images/sp/mv-bg_sp.jpg);
+}
+@media screen and (min-width: 768px) {
+  #home .p-mv {
+    background-image: url(../images/pc/mv-bg_pc.jpg);
+  }
+}
+
+#owners .p-mv {
+  background-image: url(../images/common/owner.jpg);
+  background-position: right 30%;
+}
+@media screen and (min-width: 768px) {
+  #owners .p-mv {
+    background-position: center 15%;
+  }
+}
+#owners .p-mv .p-mv__title, #owners .p-mv .p-mv__sub {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 5px #444444;
+}
+
+#feature .p-mv {
+  background-image: url(../images/sp/yoga-sp.png);
+  background-position: right -113px center;
+}
+@media screen and (min-width: 768px) {
+  #feature .p-mv {
+    background-image: url(../images/pc/yoga_pc.png);
+    background-position: center right 30%;
+  }
+}
+#feature .p-mv .p-mv__title, #feature .p-mv .p-mv__sub {
+  color: #8B6C3A;
+  text-shadow: 1px 1px 1px #525050;
 }
 
 @media screen and (min-width: 768px) {

@@ -234,6 +234,16 @@ select::-ms-expand {
   }
 }
 
+#price .l-worry {
+  margin-top: 68px;
+  margin-top: 4.25rem;
+}
+@media screen and (min-width: 768px) {
+  #price .l-worry {
+    margin-top: 7.5rem;
+  }
+}
+
 .c-btn {
   position: relative;
   display: inline-block;
@@ -2141,6 +2151,21 @@ select::-ms-expand {
   }
 }
 #members .p-mv .p-mv__title, #members .p-mv .p-mv__sub {
+  color: #FAFAFA;
+  text-shadow: 1px 1px 2px #8B6C3A;
+}
+
+#price .p-mv {
+  background-image: url(../images/sp/campaign-bg-sp.jpg);
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  #price .p-mv {
+    background-image: url(../images/pc/campaign-bg-pc.jpg);
+    background-position: center right 30%;
+  }
+}
+#price .p-mv .p-mv__title, #price .p-mv .p-mv__sub {
   color: #FAFAFA;
   text-shadow: 1px 1px 2px #8B6C3A;
 }

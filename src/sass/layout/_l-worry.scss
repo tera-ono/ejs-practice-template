@@ -5,3 +5,10 @@
     margin-top: rem(92);
   }
 }
+
+#price .l-worry {
+  margin-top: rem(68);
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}

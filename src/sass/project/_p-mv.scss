@@ -57,6 +57,20 @@
   }
 }
 
+#price .p-mv {
+  background-image: url(../images/sp/campaign-bg-sp.jpg);
+  background-position: center;
+  @include mq("md") {
+    background-image: url(../images/pc/campaign-bg-pc.jpg);
+    background-position: center right 30%;
+  }
+
+  & .p-mv__title, .p-mv__sub  {
+    color: $gray;
+    text-shadow: 1px 1px 2px $primary;
+  }
+}
+
 .p-mv__inner {
   @include mq("md") {
     display: flex;

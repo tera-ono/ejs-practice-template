@@ -1,0 +1,18 @@
+<% let pageId = 'price'; %> 
+
+<%- include('./common/_header.ejs', {
+  pageId: pageId
+}); %> 
+
+  <main>
+
+
+<%# こんな悩みありませんか セクション パーツ化 %> 
+<%- include('./common/_section-worry.ejs'); %> 
+
+<%- include('./common/_price_section.ejs'); %> 
+
+<%- include('./common/_campaign_banner.ejs'); %> 
+
+<%# フッター パーツ化(scriptタグも) %> 
+<%- include('./common/_footer.ejs',{pageId: pageId}); %>  

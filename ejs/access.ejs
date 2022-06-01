@@ -1,0 +1,101 @@
+<% let pageId = 'access'; %>
+<%# ヘッダーパーツ化 %> 
+<%- include('./common/_header.ejs', { pageId: pageId }); %>
+
+<main>
+<%# MVパーツ化 %> 
+<% const accessMv = 
+  {
+    title: 'ACCESS',
+    sub: 'MELIA FITNESS<br>パーソナルトレーニングジム メリアフィットネス',
+  }; %> 
+<%- include('./common/_mv.ejs', { mv: accessMv }); %> 
+
+  <%# accessセクション パーツ化 %> 
+  <%- include('./common/_map_section.ejs'); %>  
+
+  <%# 期間限定無料体験キャンペーン バナー %>  
+  <%- include('./common/_campaign_banner.ejs'); %>  
+  
+
+  <%# こんな悩みありませんか セクション パーツ化 %> 
+  <%- include('./common/_section-worry.ejs'); %> 
+
+  <section class="l-feature p-feature">
+    <div class="l-inner">
+      <% let feature_heading = 'MELIA FITNESSは<br class="u-hidden-tab">そんな悩みをお持ちの方にこそ<br>ご利用していただきたい理由があります。'; %> 
+      <%- include('./common/_primary_gold-heading.ejs',{ heading: feature_heading}); %> 
+
+      <div class="p-feature__title-arrow">
+        <span class="c-title-arrow"></span>
+      </div>
+
+      <%
+        const feature = {
+          main: 'FEATURE',
+          sub: 'MELIA FITNESSが選ばれる5つの特徴'
+        };
+      %> 
+      
+  
+  <section class="l-member-voice p-member-voice">
+    <figure class="p-member-voice__mv">
+      <picture>
+      <source media="(max-width: 767px)" srcset="./images/sp/yoga-sp.png">
+      <source media="(min-width: 768px)" srcset="./images/pc/yoga_pc.png">
+      <img src="./images/pc/yoga_pc.png" alt="ヨガをしている">
+      </picture>
+    </figure>
+    <div class="p-member-voice__inner l-inner">
+      <%# セクションタイトル (タブレット〜 メインの後ろにライン表示)%> 
+      <% const member_voice_title = {
+        main: 'MEMBER’S VOICE',
+        sub: '会員様の声',
+      };  %> 
+      <div class="p-member-voice__title">
+        <%- include('./common/_section-title-line.ejs',{line_title: member_voice_title}); %>
+      </div>
+
+      <%# card3のパーツ化 %> 
+      <% const membersVoice = [
+      {
+        img:'./images/common/member-voice01.jpg',
+        alt: '43歳 会社員 女性',
+        heading: '引き締まったメリハリボディになれました！',
+        name: '43歳 会社員 女性',
+        description: '自己流のダイエットでは体重は落ちても、なぜか体型はだらしないままで、少し時間が経つとリバウンドをしてしまっていました。<br>MELIA FITNESSでマンツーマンのトレーニングを受けて、リバウンド知らずの引き締まった身体を維持できています。<br>週1のトレーニングで無理なく通うことができ、楽しく続けることができています。<br>MELIA FITNESSを選んで良かったです！',
+      },
+      {
+        img:'./images/common/member-voice02.jpg',
+        alt: '36歳 公務員 女性',
+        heading: 'ボディメイクが楽しくなりました！',
+        name: '36歳 公務員 女性',
+        description: '前からジムに通っていましたが、ダイエットはいつも途中で挫折してしまっていたのでプロのトレーナーの方から教わりたいと思い、MELIA FITNESSを利用しました。<br>自分の目指している身体に合わせて、トレーニングや食生活について提案をしてくださるので、理想的なボディメイクができたと思っています。<br>今ではボディメイクをとても楽しく感じるようになりました。',
+      },
+      {
+        img:'./images/common/member-voice03.jpg',
+        alt: '32歳 会社員 女性',
+        heading: 'ダイエットに成功しました！',
+        name: '32歳 会社員 女性',
+        description: '運動をほぼしたことがなく、トレーニングは厳しいものというイメージがあり、最初は不安でしたが、トレーナーの方に丁寧にトレーニング方法を教えていただくことができ、無理なく楽しく取り組めました。<br>２か月で目標体重になり、身体も引き締まり、ダイエットに成功しました。<br>ダイエットに成功すると同時に、健康な身体を手に入れることが出来たと思います。',
+      },
+    ]; %> 
+
+    <div class="p-member-voice__cards">
+      <%- include('./common/_card3.ejs', {card3: membersVoice}); %>
+    </div>
+    </div>
+  </section>
+  <!-- /.l-member-voice p-member-voice -->
+
+  <%# priceセクション パーツ化 %> 
+  <%- include('./common/_price_section.ejs'); %> 
+
+  <%# 期間限定無料体験キャンペーン バナー %>  
+  <%- include('./common/_campaign_banner.ejs'); %>  
+</main> 
+
+  <%# フッター パーツ化(scriptタグも) %> 
+<%- include('./common/_footer.ejs',{pageId: pageId}); %> 
+
+

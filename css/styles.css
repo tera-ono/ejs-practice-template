@@ -2185,6 +2185,15 @@ select::-ms-expand {
   text-shadow: 1px 2px 1px #8B6C3A;
 }
 
+#access .p-mv {
+  background-image: url(../images/sp/mv-bg_sp.jpg);
+}
+@media screen and (min-width: 768px) {
+  #access .p-mv {
+    background-image: url(../images/pc/mv-bg_pc.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .p-mv__inner {
     display: -webkit-box;

@@ -88,6 +88,13 @@
   }
 }
 
+#access .p-mv {
+  background-image: url(../images/sp/mv-bg_sp.jpg);
+  @include mq("md") {
+    background-image: url(../images/pc/mv-bg_pc.jpg);
+  }
+}
+
 .p-mv__inner {
   @include mq("md") {
     display: flex;

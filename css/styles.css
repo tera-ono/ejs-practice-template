@@ -1806,6 +1806,12 @@ select::-ms-expand {
   }
 }
 
+@media (any-hover: hover) {
+  .p-footer-nav__item a:hover, .p-footer-nav__item a:focus {
+    color: #8B6C3A;
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 768px) {
   .p-footer-nav__item:first-of-type {
     display: none;
@@ -1969,6 +1975,12 @@ select::-ms-expand {
   white-space: nowrap;
 }
 
+@media (any-hover: hover) {
+  .p-header-nav__item a:hover, .p-header-nav__item a:focus {
+    color: #8B6C3A;
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 768px) {
   .p-header__logo {
     padding: 0 0.4375rem;
@@ -1988,6 +2000,12 @@ select::-ms-expand {
   }
 }
 
+@media (any-hover: hover) {
+  .p-header-nav__line a:hover, .p-header-nav__line a:focus {
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+}
 .p-header-nav__mobile {
   height: inherit;
   display: grid;
@@ -2111,6 +2129,20 @@ select::-ms-expand {
 #feature .p-mv .p-mv__title, #feature .p-mv .p-mv__sub {
   color: #8B6C3A;
   text-shadow: 1px 1px 1px #525050;
+}
+
+#members .p-mv {
+  background-image: url(../images/common/feature02.jpg);
+  background-position: right -113px center;
+}
+@media screen and (min-width: 768px) {
+  #members .p-mv {
+    background-position: center right 30%;
+  }
+}
+#members .p-mv .p-mv__title, #members .p-mv .p-mv__sub {
+  color: #FAFAFA;
+  text-shadow: 1px 1px 2px #8B6C3A;
 }
 
 @media screen and (min-width: 768px) {

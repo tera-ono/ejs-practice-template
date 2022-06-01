@@ -44,6 +44,18 @@
     text-shadow: 1px 1px 1px #525050;
   }
 }
+#members .p-mv {
+  background-image: url(../images/common/feature02.jpg);
+  background-position: right -113px center;
+  @include mq("md") {
+    background-position: center right 30%;
+  }
+
+  & .p-mv__title, .p-mv__sub  {
+    color: $gray;
+    text-shadow: 1px 1px 2px $primary;
+  }
+}
 
 .p-mv__inner {
   @include mq("md") {

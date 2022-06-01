@@ -1,0 +1,67 @@
+<% let pageId = 'members'; %> 
+
+<%- include('./common/_header.ejs', {
+  pageId: pageId
+}); %> 
+
+  <main>
+  <%# MVパーツ化 %> 
+<% const membersMv = 
+{
+  title: 'MEMBER’S VOICE<br>トレーニングを受けた会員様からこんな声が届いています。',
+  sub: '様々な年代の会員様からのご感想',
+}; %> 
+<%- include('./common/_mv.ejs', { mv: membersMv }); %> 
+
+<section class="l-member-voice p-member-voice">
+  <div class="p-member-voice__inner l-inner">
+    <%# セクションタイトル (タブレット〜 メインの後ろにライン表示)%> 
+    <% const member_voice_title = {
+      main: 'MEMBER’S VOICE',
+      sub: '会員様の声',
+    };  %> 
+    <div class="p-member-voice__title">
+      <%- include('./common/_section-title-line.ejs',{line_title: member_voice_title}); %>
+    </div>
+
+    <%# card3のパーツ化 %> 
+    <% const membersVoice_page = [
+    {
+      img:'./images/common/member-voice01.jpg',
+      alt: '43歳 会社員 女性',
+      heading: '引き締まったメリハリボディになれました！',
+      name: '43歳 会社員 女性',
+      description: '自己流のダイエットでは体重は落ちても、なぜか体型はだらしないままで、少し時間が経つとリバウンドをしてしまっていました。<br>MELIA FITNESSでマンツーマンのトレーニングを受けて、リバウンド知らずの引き締まった身体を維持できています。<br>週1のトレーニングで無理なく通うことができ、楽しく続けることができています。<br>MELIA FITNESSを選んで良かったです！',
+    },
+    {
+      img:'./images/common/feature04.jpg',
+      alt: '36歳 公務員 女性',
+      heading: 'ボディメイクが楽しくなりました！',
+      name: '36歳 公務員 女性',
+      description: '前からジムに通っていましたが、ダイエットはいつも途中で挫折してしまっていたのでプロのトレーナーの方から教わりたいと思い、MELIA FITNESSを利用しました。<br>自分の目指している身体に合わせて、トレーニングや食生活について提案をしてくださるので、理想的なボディメイクができたと思っています。<br>今ではボディメイクをとても楽しく感じるようになりました。',
+    },
+    {
+      img:'./images/common/member-voice03.jpg',
+      alt: '32歳 会社員 女性',
+      heading: 'ダイエットに成功しました！',
+      name: '32歳 会社員 女性',
+      description: '運動をほぼしたことがなく、トレーニングは厳しいものというイメージがあり、最初は不安でしたが、トレーナーの方に丁寧にトレーニング方法を教えていただくことができ、無理なく楽しく取り組めました。<br>２か月で目標体重になり、身体も引き締まり、ダイエットに成功しました。<br>ダイエットに成功すると同時に、健康な身体を手に入れることが出来たと思います。',
+    },
+  ]; %> 
+
+  <div class="p-member-voice__cards">
+    <%- include('./common/_card3.ejs', {card3: membersVoice_page}); %>
+  </div>
+  </div>
+</section>
+<!-- /.l-member-voice p-member-voice -->
+
+<%# こんな悩みありませんか セクション パーツ化 %> 
+<%- include('./common/_section-worry.ejs'); %> 
+
+<%- include('./common/_price_section.ejs'); %> 
+
+<%- include('./common/_campaign_banner.ejs'); %> 
+
+<%# フッター パーツ化(scriptタグも) %> 
+<%- include('./common/_footer.ejs',{pageId: pageId}); %>  

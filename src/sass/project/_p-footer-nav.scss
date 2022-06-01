@@ -19,6 +19,13 @@
   }
 }
 
+@media (any-hover: hover) {
+  .p-footer-nav__item a:hover, .p-footer-nav__item a:focus {
+    color: $primary;
+    opacity: 1;
+  }
+}
+
 .p-footer-nav__item:first-of-type {
   @include mq("md") {
     display: none;

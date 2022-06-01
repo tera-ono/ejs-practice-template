@@ -34,6 +34,13 @@
   display: inline-block;
   white-space: nowrap;
 }
+@media (any-hover: hover) {
+  .p-header-nav__item a:hover, .p-header-nav__item a:focus {
+    color: $primary;
+    opacity: 1;
+  }
+}
+
 
 .p-header__logo {
   @include mq("md") {
@@ -50,6 +57,13 @@
     padding-left: rem(41);
   }
 }
+@media (any-hover: hover) {
+  .p-header-nav__line a:hover, .p-header-nav__line a:focus {
+    color: $white;
+    opacity: 0.7;
+  }
+}
+
 
 .p-header-nav__mobile {
   height: inherit;

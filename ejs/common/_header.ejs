@@ -50,10 +50,23 @@
     <header class="l-header p-header">
       <nav class="p-header__nav p-header-nav">
         <ul class="p-header-nav__items">
-          <% navMenu1 = ['OWNER’S PROFILE','FEATURE', 'MEMBER’S VOICE']; %>
-          <% for(let i of navMenu1) {%> 
+          <% navMenu1 = [
+            {
+              pass: 'owners',
+              menu: 'OWNER’S PROFILE'
+            },
+            {
+              pass: 'feature',
+              menu: 'FEATURE'
+            },
+            {
+              pass: 'members',
+              menu: 'MEMBER’S VOICE'
+            },
+          ]; %>
+          <% for(let i in navMenu1) {%> 
           <li class="p-header-nav__item">
-            <a href="#"><%-  i;  %></a>
+            <a href="./<%= navMenu1[i].pass; %>.html"><%-  navMenu1[i].menu;  %></a>
           </li>
           <% } %> 
 
@@ -67,10 +80,23 @@
             <% } %>
           </li>
 
-          <% navMenu2 = ['PRICE','Q&A', 'ACCESS']; %>
-          <% for(let i of navMenu2) {%> 
+          <% navMenu2 = [
+            {
+              pass: 'price',
+              menu: 'PRICE'
+            },
+            {
+              pass: 'qa',
+              menu: 'Q&A'
+            },
+            {
+              pass: 'access',
+              menu: 'ACCESS'
+            },
+          ]; %>
+          <% for(let i in navMenu2) {%> 
           <li class="p-header-nav__item">
-            <a href="#"><%-  i;  %></a>
+            <a href="./<%= navMenu2[i].pass; %>.html"><%-  navMenu2[i].menu;  %></a>
           </li>
           <% } %> 
 
@@ -92,10 +118,10 @@
     <nav class="c-drawer-menu js-drawer">
       <ul class="c-drawer-menu__items">
       <%# 配列を結合してドロワーメニュー %> 
-      <% drawerMenu =['TOP'].concat(navMenu1).concat(navMenu2); %> 
-      <% for(let i of drawerMenu) { %>
+      <% drawerMenu =[{pass: 'index', menu: 'TOP'}].concat(navMenu1).concat(navMenu2); %> 
+      <% for(let i in drawerMenu) { %>
         <li class="c-drawer-menu__item js-drawer-link">
-          <a href="#"><%- i %></a>
+          <a href="./<%= drawerMenu[i].pass; %>.html "><%- drawerMenu[i].menu; %></a>
         </li>
       <% } %>
       <li class="c-drawer-menu__icons">

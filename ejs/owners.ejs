@@ -1,0 +1,12 @@
+<% let pageId = 'owners'; %> 
+
+<%- include('./common/_header.ejs', {
+  pageId: pageId
+}); %> 
+
+  <main>
+  <%# MVパーツ化 %> 
+  <%- include('./common/_mv.ejs', { pageId: pageId }); %> 
+
+<%# フッター パーツ化(scriptタグも) %> 
+<%- include('./common/_footer.ejs',{pageId: pageId}); %>  

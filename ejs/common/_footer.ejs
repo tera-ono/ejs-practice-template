@@ -5,7 +5,7 @@
         <% if (pageId === 'home') { %>
         <img src="../images/common/logo.svg" alt="ロゴ">
         <% } else { %>
-          <a href="#">
+          <a href="/">
             <img src="../images/common/logo.svg" alt="ロゴ">
           </a>
         <% } %>
@@ -13,9 +13,9 @@
       <nav class="p-footer__nav p-footer-nav">
         <ul class="p-footer-nav__items">
           <%# 配列drawerMenu は_header.ejs参照 %>
-          <%  for(let i of drawerMenu) { %>
+          <%  for(let i in drawerMenu) { %>
           <li class="p-footer-nav__item">
-            <a href="#"><%= i %></a>
+            <a href="./<%= drawerMenu[i].pass; %>.html"><%= drawerMenu[i].menu; %></a>
           </li>
           <% } %>
         </ul>
@@ -32,3 +32,8 @@
     </div>
   </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

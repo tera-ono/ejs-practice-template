@@ -2170,6 +2170,21 @@ select::-ms-expand {
   text-shadow: 1px 1px 2px #8B6C3A;
 }
 
+#qa .p-mv {
+  background-image: url(../images/sp/gym-sp.jpg);
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  #qa .p-mv {
+    background-image: url(../images/pc/gym-pc.jpg);
+    background-position: center;
+  }
+}
+#qa .p-mv .p-mv__title, #qa .p-mv .p-mv__sub {
+  color: #FAFAFA;
+  text-shadow: 1px 2px 1px #8B6C3A;
+}
+
 @media screen and (min-width: 768px) {
   .p-mv__inner {
     display: -webkit-box;

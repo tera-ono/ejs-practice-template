@@ -1,0 +1,113 @@
+<% let pageId = 'qa'; %>
+
+<%# ヘッダーパーツ化 %> 
+<%- include('./common/_header.ejs', { pageId: pageId }); %>
+
+<main>
+<%# MVパーツ化 %> 
+<% const topMv = 
+  {
+    title: '週一<span class="p-mv__title-small">のトレーニングで</span></span><br>人に見せたくなる<br class="u-hidden-tab">カラダ<span class="p-mv__title-small">をつくる</span>',
+    sub: '一流俳優・モデルを指導してきた<br class="u-hidden-tab">本物のパーソナルトレーニング',
+  }; %> 
+<%- include('./common/_mv.ejs', { mv: topMv }); %> 
+
+<%# こんな悩みありませんか セクション パーツ化 %> 
+<%- include('./common/_section-worry.ejs'); %>
+
+<%# Q&Aセクション パーツ化 %> 
+<% const qa_title = {
+  main: 'Q&A',
+  sub: 'よくある質問'
+}; %>
+<% qa = [
+{
+  question: 'ダイエットをしたいのですが、どれくらいの効果がありますか？',
+  answer: '個人差はありますが、週に1回のパーソナルトレーニングと自宅でのトレーニング、食生活を改善することで、２か月で効果を感じていただくことができます。'
+},
+{
+  question: '運動をしたことがなく、体力に自信がありません。大丈夫でしょうか？',
+  answer: 'MELIA FITNESSは専属のトレーナーがマンツーマンでトレーニングのサポートをしております。また、無理なトレーニングはしないため、運動をしたことがなく、体力に自信がない方でも安心して取り組んでいただけます。'
+},
+{
+  question: 'リバウンドはしませんか？',
+  answer: 'リバウンドの原因は筋肉が落ちて基礎代謝が下がってしまうことが原因であると考えられています。<br>MELIA FITNESSのプログラムでは、確実に筋肉をつけられますので、リバウンドしにくい体になれます。'
+},
+{
+  question: '厳しい食事制限をする自信がありません。',
+  answer: 'MELIA FITNESSでは食事の選び方や食べ方など食事改善についてアドバイスを行っております。<br>厳しい食事制限はありませんのでご安心ください。'
+},
+{
+  question: 'トレーニングの際に必要なものはありますか？',
+  answer: 'トレーニングウェアとトレーニング時に使用するシューズをおもちください。<br>お持ちでない場合はレンタルをご用意しておりますのでご利用ください。'
+},
+];
+%> 
+<%- include('./common/_qa_section.ejs',{qa_title: qa_title, qa: qa}); %> 
+
+<section class="l-flow p-flow">
+  <div class="l-inner">
+     <%# セクションタイトル (タブレット〜 メインの後ろにライン表示)%> 
+     <% const flow_title = {
+      main: 'FLOW',
+      sub: 'パーソナルトレーニングの流れ',
+    };  %> 
+    <div class="p-flow__title">
+      <%- include('./common/_section-title-line.ejs',{line_title: flow_title}); %>
+    </div>
+
+     <% const flow_card = [
+      {
+        img:'./images/common/flow01.jpg',
+        alt: 'カウンセリング',
+        tag: 'STEP01',
+        heading: 'カウンセリング',
+        description: 'まずはカウンセリングでお体の状態やライフスタイルをお伺いし、今後の流れをご説明いたします。',
+      },
+      {
+        img:'./images/common/flow02.jpg',
+        alt: '測定・メニュー提案',
+        tag: 'STEP02',
+        heading: '測定・メニュー提案',
+        description: '体組成計で現在の身体の状態を確認します。その後、理想の身体になるためのトレーニングメニューをご提案させていただきます。',
+      },
+      {
+        img:'./images/common/flow03.jpg',
+        alt: 'トレーニング',
+        tag: 'STEP03',
+        heading: 'トレーニング',
+        description: '専属のトレーナーがマンツーマンであなたのなりたい身体に合わせたトレーニングをサポートいたします。',
+      },
+    ]; %> 
+    <div class="p-flow__cards c-cards4">
+     <%- include('./common/_card4.ejs', {card4: flow_card}); %> 
+    </div>
+  </div>
+</section>
+<!-- /.l-flow p-flow -->
+
+  <%# priceセクション パーツ化 %> 
+  <%- include('./common/_price_section.ejs'); %> 
+
+
+  
+
+  
+  
+  <%# 途中にあるジムのイメージ画像 %> 
+  <div class="c-gim-img">
+    <picture>
+    <source media="(max-width: 767px)" srcset="./images/sp/gym-sp.jpg">
+    <source media="(min-width: 768px)" srcset="./images/pc/gym-pc.jpg">
+    <img src="./images/pc/gym-pc.jpg" alt="ジムの室内雰囲気">
+    </picture>
+  </div>
+
+  <%# 期間限定無料体験キャンペーン バナー %>  
+  <%- include('./common/_campaign_banner.ejs'); %>  
+</main> 
+
+  <%# フッター パーツ化(scriptタグも) %> 
+<%- include('./common/_footer.ejs',{pageId: pageId}); %> 
+
+

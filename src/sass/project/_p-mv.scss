@@ -20,6 +20,7 @@
     background-image: url(../images/pc/mv-bg_pc.jpg);
   }
 }
+
 #owners .p-mv {
   background-image: url(../images/common/owner.jpg);
   background-position: right 30%;
@@ -31,6 +32,7 @@
     text-shadow: 0px 0px 5px #444444;
   }
 }
+
 #feature .p-mv {
   background-image: url(../images/sp/yoga-sp.png);
   background-position: right -113px center;
@@ -44,6 +46,7 @@
     text-shadow: 1px 1px 1px #525050;
   }
 }
+
 #members .p-mv {
   background-image: url(../images/common/feature02.jpg);
   background-position: right -113px center;
@@ -68,6 +71,20 @@
   & .p-mv__title, .p-mv__sub  {
     color: $gray;
     text-shadow: 1px 1px 2px $primary;
+  }
+}
+
+#qa .p-mv {
+  background-image: url(../images/sp/gym-sp.jpg);
+  background-position: center;
+  @include mq("md") {
+    background-image: url(../images/pc/gym-pc.jpg);
+    background-position: center;
+  }
+
+  & .p-mv__title, .p-mv__sub  {
+    color: $gray;
+    text-shadow: 1px 2px 1px $primary;
   }
 }
 

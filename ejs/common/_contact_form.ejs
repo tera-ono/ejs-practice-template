@@ -1,0 +1,114 @@
+<%# コンタクトフォーム セクション パーツ化 %> 
+<section class="p-contact l-inner">
+  <%# 普通のタイトル・サブタイトル パーツ化 %> 
+  <% const contact_form = {
+    main: 'CONTACT',
+    sub: 'お問い合わせ'
+  }; %> 
+  <%- include('./_section-title-normal.ejs', {normal_title: contact_form }); %>
+  <form action="php/mailform.php" method="post" id="mail_form">
+  
+    <dl>
+      <dt><i></i>会社名</dt>
+      <dd><input type="text" name="company" value="" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>名前</dt>
+      <dd class="required"><input type="text" name="name_1" value="" /> <input type="text" name="name_2" value="" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>ふりがな</dt>
+      <dd><input type="text" name="read_1" value="" /> <input type="text" name="read_2" value="" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>メールアドレス</dt>
+      <dd class="required"><input type="email" name="mail_address" value="" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>メールアドレス(確認用)</dt>
+      <dd><input type="email" name="mail_address_confirm" value="" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>性別</dt>
+      <dd>
+        <ul>
+          <li><label><input type="radio" name="gender" value="男性" />男性</label></li>
+          <li><label><input type="radio" name="gender" value="女性" />女性</label></li>
+        </ul>
+      </dd>
+    </dl>
+  
+  
+    <dl>
+      <dt><i></i>郵便番号</dt>
+      <dd class="required"><input type="text" name="postal" value="" onkeyup="AjaxZip3.zip2addr( this,'','address','address' );" />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>住所</dt>
+      <dd><input type="text" name="address" value="" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>電話番号</dt>
+      <dd><input type="tel" name="phone" value="" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>ご希望の日時</dt>
+      <dd class="required"><input type="text" name="schedule" value="" readonly="readonly" /></dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>解決したいお悩み</dt>
+      <dd>
+        <select name="product">
+          <option value="">選択してください</option>
+          <option value="トレーニングをしても本当に痩せられるか">トレーニングをしても本当に痩せられるか</option>
+          <option value="トレーニングしたいけど時間がない">トレーニングしたいけど時間がない</option>
+          <option value="厳しい食事制限に耐えられるか">厳しい食事制限に耐えられるか</option>
+          <option value="一時的に痩せてもリバウンドしないか">一時的に痩せてもリバウンドしないか</option>
+          <option value="続けられるか不安">続けられるか不安</option>
+        </select>
+      </dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>お問い合わせの種類</dt>
+      <dd>
+        <ul>
+          <li><label><input type="checkbox" name="kind[]" value="WEBサイトについて" />WEBサイトについて</label></li>
+          <li><label><input type="checkbox" name="kind[]" value="商品について" />商品について</label></li>
+          <li><label><input type="checkbox" name="kind[]" value="キャンペーンについて" />キャンペーンについて</label></li>
+          <li><label><input type="checkbox" name="kind[]" value="採用について" />採用について</label></li>
+          <li><label><input type="checkbox" name="kind[]" value="ご意見・ご要望" />ご意見・ご要望</label></li>
+        </ul>
+      </dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>返信方法のご希望</dt>
+      <dd>
+        <ul>
+          <li><label><input type="checkbox" name="response[]" value="電話での返信を希望" />電話での返信を希望</label></li>
+          <li><label><input type="checkbox" name="response[]" value="メールでの返信を希望" />メールでの返信を希望</label></li>
+          <li><label><input type="checkbox" name="response[]" value="返信不要" />返信不要</label></li>
+        </ul>
+      </dd>
+    </dl>
+  
+    <dl>
+      <dt><i></i>お問い合わせの内容</dt>
+      <dd class="required"><textarea name="contents" cols="40" rows="5"></textarea></dd>
+    </dl>
+  
+  
+    <p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+  
+  </form>
+</section>

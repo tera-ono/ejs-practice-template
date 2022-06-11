@@ -1,0 +1,9 @@
+@use "global" as *;
+.p-contact {
+  padding-top: rem(66);
+  padding-bottom: rem(56);
+  @include mq("md") {
+    padding-top: rem(96);
+    padding-bottom: rem(96);
+  }
+}

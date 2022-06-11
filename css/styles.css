@@ -133,9 +133,6 @@ input,
 button,
 select,
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background: transparent;
   border: none;
   border-radius: 0;
@@ -145,11 +142,6 @@ textarea {
 
 textarea {
   resize: vertical;
-}
-
-input[type=checkbox],
-input[type=radio] {
-  display: none;
 }
 
 input[type=submit],
@@ -1719,6 +1711,19 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-campaign__link-btn {
     margin-top: 3.25rem;
+  }
+}
+
+.p-contact {
+  padding-top: 66px;
+  padding-top: 4.125rem;
+  padding-bottom: 56px;
+  padding-bottom: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 

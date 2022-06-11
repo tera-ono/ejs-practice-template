@@ -31,6 +31,12 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
      <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital@1&display=swap" rel="stylesheet" />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+     <!-- メールフォームのcss -->
+     <link rel="stylesheet" href="css/mailform.css" />
+     <!-- ご希望の日時選択ライブラリここから -->
+     <link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+     <!-- ご希望の日時選択ライブラリここまで -->
      <link rel="stylesheet" href="./css/styles.css" />
    </head>
    <body id="price">
@@ -290,6 +296,37 @@
        </footer>
 
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+       <script src="js/mailform-js.php"></script>
+
+       <!-- フリガナ自動入力ライブラリここから -->
+       <script src="js/jquery.autoKana.js"></script>
+       <script>
+         (function($) {
+           $.fn.autoKana('input[name="name_1"]', 'input[name="read_1"]', {
+             katakana: false
+           });
+           $.fn.autoKana('input[name="name_2"]', 'input[name="read_2"]', {
+             katakana: false
+           });
+         })(jQuery);
+       </script>
+       <!-- フリガナ自動入力ライブラリここまで -->
+
+       <!-- 住所自動入力ライブラリここから -->
+       <script src="js/ajaxzip3.js"></script>
+       <!-- 住所自動入力ライブラリここまで -->
+
+       <!-- ご希望の日時選択ライブラリここから -->
+       <script src="js/jquery.datetimepicker.js"></script>
+       <script>
+         (function($) {
+           $('input[name="schedule"]').datetimepicker({
+             lang: 'ja'
+           });
+         })(jQuery);
+       </script>
+       <!-- ご希望の日時選択ライブラリここまで -->
        <script src="./js/script.js"></script>
    </body>
  </html>

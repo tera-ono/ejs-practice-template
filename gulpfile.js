@@ -48,8 +48,6 @@ const sourcemaps = require("gulp-sourcemaps");//ソースマップを生成す�
 const browsers = [
     'last 2 versions', //各ブラウザの最後の2つのバージョン
     '> 5%', //世界のシェア5%以上のブラウザに対応
-    'ie = 11', //IE11
-    'not ie <= 10', //IE10未満を除く
     'ios >= 8', //iOSのSafariのバージョン8以上
     'and_chr >= 5', // Chrome for Android 5以上
     'Android >= 5', //Android5以上
